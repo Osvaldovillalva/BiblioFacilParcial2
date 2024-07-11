@@ -39,6 +39,7 @@
             buttonSalir = new Button();
             panel2 = new Panel();
             buttonCobroCuotas = new Button();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -164,11 +165,23 @@
             buttonCobroCuotas.UseVisualStyleBackColor = true;
             buttonCobroCuotas.Click += buttonCobroCuotas_Click;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.MediumVioletRed;
+            panel3.Dock = DockStyle.Top;
+            panel3.ForeColor = Color.MediumVioletRed;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(800, 50);
+            panel3.TabIndex = 3;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(800, 492);
+            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(buttonSalir);
             Controls.Add(panel1);
@@ -194,5 +207,6 @@
         private Button buttonCuota;
         private Panel panel2;
         private Button buttonCobroCuotas;
+        private Panel panel3;
     }
 }

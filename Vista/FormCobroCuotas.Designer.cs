@@ -35,6 +35,7 @@
             dgvCuotasMensuales = new DataGridView();
             listBoxCarritoCuotas = new ListBox();
             buttonGenerarPago = new Button();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvSocios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCuotasMensuales).BeginInit();
             SuspendLayout();
@@ -52,7 +53,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(35, 9);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(35, 50);
             label1.Name = "label1";
             label1.Size = new Size(88, 15);
             label1.TabIndex = 1;
@@ -61,7 +63,7 @@
             // textBoxDatosSocio
             // 
             textBoxDatosSocio.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDatosSocio.Location = new Point(35, 44);
+            textBoxDatosSocio.Location = new Point(35, 84);
             textBoxDatosSocio.Name = "textBoxDatosSocio";
             textBoxDatosSocio.Size = new Size(527, 23);
             textBoxDatosSocio.TabIndex = 2;
@@ -72,11 +74,11 @@
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(35, 73);
+            dgvSocios.Location = new Point(35, 113);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(917, 150);
+            dgvSocios.Size = new Size(917, 110);
             dgvSocios.TabIndex = 3;
             // 
             // dgvCuotasMensuales
@@ -110,11 +112,22 @@
             buttonGenerarPago.UseVisualStyleBackColor = true;
             buttonGenerarPago.Click += buttonGenerarPago_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MediumVioletRed;
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(979, 34);
+            panel1.TabIndex = 7;
+            // 
             // FormCobroCuotas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(979, 559);
+            BackColor = Color.Black;
+            ClientSize = new Size(979, 516);
+            Controls.Add(panel1);
             Controls.Add(buttonGenerarPago);
             Controls.Add(listBoxCarritoCuotas);
             Controls.Add(dgvCuotasMensuales);
@@ -122,6 +135,7 @@
             Controls.Add(textBoxDatosSocio);
             Controls.Add(label1);
             Controls.Add(buttonSalir);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormCobroCuotas";
             Text = "FormCobroCuotas";
             Load += FormCobroCuotas_Load;
@@ -140,5 +154,6 @@
         private DataGridView dgvCuotasMensuales;
         private ListBox listBoxCarritoCuotas;
         private Button buttonGenerarPago;
+        private Panel panel1;
     }
 }
