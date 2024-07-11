@@ -48,78 +48,106 @@ namespace Vista
             buttonIngresar = new Button();
             buttonCancelar = new Button();
             buttonSalir = new Button();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(103, 83);
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(12, 73);
             label1.Name = "label1";
-            label1.Size = new Size(47, 15);
+            label1.Size = new Size(79, 28);
             label1.TabIndex = 0;
             label1.Text = "Usuario";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(108, 156);
+            label2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(12, 126);
             label2.Name = "label2";
-            label2.Size = new Size(67, 15);
+            label2.Size = new Size(110, 28);
             label2.TabIndex = 1;
             label2.Text = "Contraseña";
             // 
             // textBoxUsuario
             // 
             textBoxUsuario.BorderStyle = BorderStyle.FixedSingle;
-            textBoxUsuario.Location = new Point(227, 86);
+            textBoxUsuario.Location = new Point(138, 78);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(167, 23);
+            textBoxUsuario.Size = new Size(261, 23);
             textBoxUsuario.TabIndex = 2;
             // 
             // textBoxContraseña
             // 
             textBoxContraseña.BorderStyle = BorderStyle.FixedSingle;
-            textBoxContraseña.Location = new Point(225, 154);
+            textBoxContraseña.Location = new Point(139, 135);
             textBoxContraseña.Name = "textBoxContraseña";
             textBoxContraseña.PasswordChar = '*';
-            textBoxContraseña.Size = new Size(169, 23);
+            textBoxContraseña.Size = new Size(260, 23);
             textBoxContraseña.TabIndex = 3;
             // 
             // buttonIngresar
             // 
-            buttonIngresar.Location = new Point(321, 234);
+            buttonIngresar.BackColor = Color.Black;
+            buttonIngresar.FlatAppearance.BorderColor = Color.Red;
+            buttonIngresar.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonIngresar.ForeColor = Color.White;
+            buttonIngresar.Location = new Point(241, 223);
             buttonIngresar.Name = "buttonIngresar";
-            buttonIngresar.Size = new Size(137, 86);
+            buttonIngresar.Size = new Size(177, 55);
             buttonIngresar.TabIndex = 4;
             buttonIngresar.Text = "Ingresar";
-            buttonIngresar.UseVisualStyleBackColor = true;
+            buttonIngresar.UseVisualStyleBackColor = false;
             buttonIngresar.Click += buttonIngresar_Click;
             // 
             // buttonCancelar
             // 
-            buttonCancelar.Location = new Point(121, 234);
+            buttonCancelar.BackColor = Color.Black;
+            buttonCancelar.FlatAppearance.BorderColor = Color.MediumVioletRed;
+            buttonCancelar.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCancelar.ForeColor = SystemColors.ButtonFace;
+            buttonCancelar.Location = new Point(25, 223);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(133, 86);
+            buttonCancelar.Size = new Size(172, 55);
             buttonCancelar.TabIndex = 5;
             buttonCancelar.Text = "Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(638, 340);
+            buttonSalir.BackColor = Color.Black;
+            buttonSalir.FlatAppearance.BorderColor = Color.White;
+            buttonSalir.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.ForeColor = SystemColors.ButtonFace;
+            buttonSalir.Location = new Point(25, 328);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(150, 98);
+            buttonSalir.Size = new Size(393, 55);
             buttonSalir.TabIndex = 6;
             buttonSalir.Text = "Salir";
-            buttonSalir.UseVisualStyleBackColor = true;
+            buttonSalir.UseVisualStyleBackColor = false;
             buttonSalir.Click += buttonSalir_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MediumVioletRed;
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(792, 40);
+            panel1.TabIndex = 7;
             // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(792, 433);
+            Controls.Add(panel1);
             Controls.Add(buttonSalir);
             Controls.Add(buttonCancelar);
             Controls.Add(buttonIngresar);
@@ -127,6 +155,7 @@ namespace Vista
             Controls.Add(textBoxUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormLogin";
             Text = "Login";
             Load += FormLogin_Load;
@@ -137,5 +166,6 @@ namespace Vista
         #endregion
 
         private Button buttonSalir;
+        private Panel panel1;
     }
 }
