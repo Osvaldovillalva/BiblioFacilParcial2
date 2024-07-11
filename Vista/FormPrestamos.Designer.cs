@@ -46,7 +46,7 @@
             // 
             // buttonGenerarPrestamo
             // 
-            buttonGenerarPrestamo.Location = new Point(589, 347);
+            buttonGenerarPrestamo.Location = new Point(589, 369);
             buttonGenerarPrestamo.Name = "buttonGenerarPrestamo";
             buttonGenerarPrestamo.Size = new Size(137, 61);
             buttonGenerarPrestamo.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(589, 414);
+            buttonSalir.Location = new Point(589, 436);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(320, 52);
             buttonSalir.TabIndex = 0;
@@ -123,12 +123,12 @@
             dgvLibros.Name = "dgvLibros";
             dgvLibros.ReadOnly = true;
             dgvLibros.RowTemplate.Height = 25;
-            dgvLibros.Size = new Size(557, 191);
+            dgvLibros.Size = new Size(557, 215);
             dgvLibros.TabIndex = 11;
             // 
             // buttonLimpiartodo
             // 
-            buttonLimpiartodo.Location = new Point(779, 347);
+            buttonLimpiartodo.Location = new Point(779, 369);
             buttonLimpiartodo.Name = "buttonLimpiartodo";
             buttonLimpiartodo.Size = new Size(130, 58);
             buttonLimpiartodo.TabIndex = 12;
@@ -142,7 +142,7 @@
             listBoxCarrito.ItemHeight = 15;
             listBoxCarrito.Location = new Point(589, 103);
             listBoxCarrito.Name = "listBoxCarrito";
-            listBoxCarrito.Size = new Size(320, 229);
+            listBoxCarrito.Size = new Size(320, 259);
             listBoxCarrito.TabIndex = 13;
             // 
             // label3
