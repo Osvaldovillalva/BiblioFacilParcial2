@@ -22,6 +22,7 @@ namespace Vista
             InitializeComponent();
             controladoraCuotas = new ControladoraCuotas();
             dgvValorCuota.SelectionChanged += dgvValorCuota_SelectionChanged;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)

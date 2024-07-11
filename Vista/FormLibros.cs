@@ -21,6 +21,7 @@ namespace Vista
             InitializeComponent();
             controladoraLibros = new ControladoraLibros(); // Inicializa la controladora
             dgvLibros.SelectionChanged += dgvLibros_SelectionChanged;
+            this.WindowState = FormWindowState.Maximized;
         }
 
 

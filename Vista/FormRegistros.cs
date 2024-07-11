@@ -21,6 +21,7 @@ namespace Vista
             InitializeComponent();
             controladoraDevoluciones =new ControladoraDevoluciones();
             controladoraMultas = new ControladoraMultas();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)

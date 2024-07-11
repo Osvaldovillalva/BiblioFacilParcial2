@@ -46,9 +46,9 @@
             // 
             // buttonGenerarPrestamo
             // 
-            buttonGenerarPrestamo.Location = new Point(863, 347);
+            buttonGenerarPrestamo.Location = new Point(589, 347);
             buttonGenerarPrestamo.Name = "buttonGenerarPrestamo";
-            buttonGenerarPrestamo.Size = new Size(201, 61);
+            buttonGenerarPrestamo.Size = new Size(137, 61);
             buttonGenerarPrestamo.TabIndex = 2;
             buttonGenerarPrestamo.Text = "Generar Prestamo";
             buttonGenerarPrestamo.UseVisualStyleBackColor = true;
@@ -69,15 +69,15 @@
             textBoxDatosLibro.BorderStyle = BorderStyle.FixedSingle;
             textBoxDatosLibro.Location = new Point(12, 244);
             textBoxDatosLibro.Name = "textBoxDatosLibro";
-            textBoxDatosLibro.Size = new Size(818, 23);
+            textBoxDatosLibro.Size = new Size(559, 23);
             textBoxDatosLibro.TabIndex = 8;
             textBoxDatosLibro.TextChanged += textBoxDatosLibro_TextChanged;
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(863, 414);
+            buttonSalir.Location = new Point(589, 414);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(438, 63);
+            buttonSalir.Size = new Size(320, 52);
             buttonSalir.TabIndex = 0;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
@@ -96,9 +96,9 @@
             // textBoxDatosSocio
             // 
             textBoxDatosSocio.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDatosSocio.Location = new Point(11, 103);
+            textBoxDatosSocio.Location = new Point(14, 103);
             textBoxDatosSocio.Name = "textBoxDatosSocio";
-            textBoxDatosSocio.Size = new Size(819, 23);
+            textBoxDatosSocio.Size = new Size(557, 23);
             textBoxDatosSocio.TabIndex = 4;
             textBoxDatosSocio.TextChanged += textBoxDatosSocio_TextChanged;
             // 
@@ -111,7 +111,7 @@
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(819, 97);
+            dgvSocios.Size = new Size(560, 97);
             dgvSocios.TabIndex = 10;
             // 
             // dgvLibros
@@ -123,14 +123,14 @@
             dgvLibros.Name = "dgvLibros";
             dgvLibros.ReadOnly = true;
             dgvLibros.RowTemplate.Height = 25;
-            dgvLibros.Size = new Size(818, 191);
+            dgvLibros.Size = new Size(557, 191);
             dgvLibros.TabIndex = 11;
             // 
             // buttonLimpiartodo
             // 
-            buttonLimpiartodo.Location = new Point(1100, 350);
+            buttonLimpiartodo.Location = new Point(779, 347);
             buttonLimpiartodo.Name = "buttonLimpiartodo";
-            buttonLimpiartodo.Size = new Size(201, 58);
+            buttonLimpiartodo.Size = new Size(130, 58);
             buttonLimpiartodo.TabIndex = 12;
             buttonLimpiartodo.Text = "Limpiar todo";
             buttonLimpiartodo.UseVisualStyleBackColor = true;
@@ -140,16 +140,16 @@
             // 
             listBoxCarrito.FormattingEnabled = true;
             listBoxCarrito.ItemHeight = 15;
-            listBoxCarrito.Location = new Point(863, 100);
+            listBoxCarrito.Location = new Point(589, 103);
             listBoxCarrito.Name = "listBoxCarrito";
-            listBoxCarrito.Size = new Size(438, 244);
+            listBoxCarrito.Size = new Size(320, 229);
             listBoxCarrito.TabIndex = 13;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(863, 74);
+            label3.Location = new Point(589, 74);
             label3.Name = "label3";
             label3.Size = new Size(43, 15);
             label3.TabIndex = 14;
@@ -161,7 +161,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1332, 51);
+            panel1.Size = new Size(930, 51);
             panel1.TabIndex = 15;
             // 
             // FormPrestamos
@@ -169,7 +169,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1332, 478);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(listBoxCarrito);

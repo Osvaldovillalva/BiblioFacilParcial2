@@ -23,6 +23,7 @@ namespace Vista
             controladoraSocios = new ControladoraSocios(); // Inicializa la controladora
             controladoraCuotas = new ControladoraCuotas();
             dgvSocios.SelectionChanged += dgvSocios_SelectionChanged;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void FormSocios_Load(object sender, EventArgs e)

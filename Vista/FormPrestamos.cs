@@ -38,6 +38,7 @@ namespace Vista
             // Suscribir a los eventos SelectionChanged para los DataGridViews
             dgvSocios.SelectionChanged += dgvSocios_SelectionChanged;
             dgvLibros.SelectionChanged += dgvLibros_SelectionChanged;
+            this.WindowState = FormWindowState.Maximized;
         }
 
 

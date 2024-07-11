@@ -22,6 +22,7 @@ namespace Vista
             controladoraMultas = controladora;
             controladoraCuotas = new ControladoraCuotas();
             this.Load += new EventHandler(FormMenu_Load);
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void buttonLibros_Click(object sender, EventArgs e)
