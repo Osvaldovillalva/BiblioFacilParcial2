@@ -93,7 +93,7 @@ namespace Vista
             // buttonIngresar
             // 
             buttonIngresar.BackColor = Color.Black;
-            buttonIngresar.FlatAppearance.BorderColor = Color.Red;
+            buttonIngresar.FlatAppearance.BorderColor = Color.MediumVioletRed;
             buttonIngresar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
             buttonIngresar.Location = new Point(222, 223);
