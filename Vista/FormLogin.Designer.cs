@@ -41,6 +41,7 @@ namespace Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             label1 = new Label();
             label2 = new Label();
             textBoxUsuario = new TextBox();
@@ -49,6 +50,8 @@ namespace Vista
             buttonCancelar = new Button();
             buttonSalir = new Button();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -124,9 +127,9 @@ namespace Vista
             buttonSalir.FlatAppearance.BorderColor = Color.White;
             buttonSalir.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(12, 285);
+            buttonSalir.Location = new Point(21, 289);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(359, 55);
+            buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 6;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = false;
@@ -141,12 +144,23 @@ namespace Vista
             panel1.Size = new Size(930, 50);
             panel1.TabIndex = 7;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(397, 56);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(521, 445);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(930, 500);
+            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(buttonSalir);
             Controls.Add(buttonCancelar);
@@ -159,6 +173,7 @@ namespace Vista
             Name = "FormLogin";
             Text = "Login";
             Load += FormLogin_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,5 +182,6 @@ namespace Vista
 
         private Button buttonSalir;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }

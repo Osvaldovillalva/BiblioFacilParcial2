@@ -46,8 +46,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(buttonPrestamos);
             panel1.Controls.Add(buttonSocios);
             panel1.Controls.Add(buttonLibros);
             panel1.Location = new Point(0, 70);
@@ -57,8 +55,7 @@
             // 
             // button1
             // 
-            button1.Dock = DockStyle.Top;
-            button1.Location = new Point(0, 231);
+            button1.Location = new Point(611, 205);
             button1.Name = "button1";
             button1.Size = new Size(197, 89);
             button1.TabIndex = 2;
@@ -68,8 +65,7 @@
             // 
             // buttonPrestamos
             // 
-            buttonPrestamos.Dock = DockStyle.Top;
-            buttonPrestamos.Location = new Point(0, 128);
+            buttonPrestamos.Location = new Point(611, 95);
             buttonPrestamos.Name = "buttonPrestamos";
             buttonPrestamos.Size = new Size(197, 103);
             buttonPrestamos.TabIndex = 2;
@@ -134,9 +130,9 @@
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(328, 331);
+            buttonSalir.Location = new Point(492, 346);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(156, 74);
+            buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 1;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
@@ -148,7 +144,7 @@
             panel2.Controls.Add(button2);
             panel2.Controls.Add(buttonCuota);
             panel2.Controls.Add(buttonReglas);
-            panel2.Location = new Point(606, 101);
+            panel2.Location = new Point(237, 70);
             panel2.Name = "panel2";
             panel2.Size = new Size(194, 391);
             panel2.TabIndex = 2;
@@ -181,6 +177,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(buttonPrestamos);
+            Controls.Add(button1);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(buttonSalir);
