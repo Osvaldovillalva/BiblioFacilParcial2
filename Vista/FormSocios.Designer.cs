@@ -43,6 +43,7 @@
             dgvSocios = new DataGridView();
             textBoxBuscar = new TextBox();
             label4 = new Label();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSocios).BeginInit();
             SuspendLayout();
@@ -61,15 +62,15 @@
             panel1.Controls.Add(BtnModificar);
             panel1.Controls.Add(buttonBorrar);
             panel1.Controls.Add(buttonSalir);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(12, 48);
             panel1.Name = "panel1";
-            panel1.Size = new Size(227, 488);
+            panel1.Size = new Size(227, 458);
             panel1.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(14, 117);
             label3.Name = "label3";
             label3.Size = new Size(33, 15);
@@ -79,6 +80,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(14, 67);
             label2.Name = "label2";
             label2.Size = new Size(51, 15);
@@ -88,6 +90,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(14, 16);
             label1.Name = "label1";
             label1.Size = new Size(51, 15);
@@ -123,7 +126,7 @@
             // 
             // buttonLimpiar
             // 
-            buttonLimpiar.Location = new Point(45, 174);
+            buttonLimpiar.Location = new Point(45, 178);
             buttonLimpiar.Name = "buttonLimpiar";
             buttonLimpiar.Size = new Size(137, 51);
             buttonLimpiar.TabIndex = 5;
@@ -134,7 +137,7 @@
             // buttonAgregar
             // 
             buttonAgregar.Dock = DockStyle.Bottom;
-            buttonAgregar.Location = new Point(0, 265);
+            buttonAgregar.Location = new Point(0, 235);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(225, 59);
             buttonAgregar.TabIndex = 4;
@@ -145,7 +148,7 @@
             // BtnModificar
             // 
             BtnModificar.Dock = DockStyle.Bottom;
-            BtnModificar.Location = new Point(0, 324);
+            BtnModificar.Location = new Point(0, 294);
             BtnModificar.Name = "BtnModificar";
             BtnModificar.Size = new Size(225, 52);
             BtnModificar.TabIndex = 3;
@@ -156,7 +159,7 @@
             // buttonBorrar
             // 
             buttonBorrar.Dock = DockStyle.Bottom;
-            buttonBorrar.Location = new Point(0, 376);
+            buttonBorrar.Location = new Point(0, 346);
             buttonBorrar.Name = "buttonBorrar";
             buttonBorrar.Size = new Size(225, 56);
             buttonBorrar.TabIndex = 2;
@@ -167,7 +170,7 @@
             // buttonSalir
             // 
             buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 432);
+            buttonSalir.Location = new Point(0, 402);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(225, 54);
             buttonSalir.TabIndex = 1;
@@ -180,17 +183,17 @@
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(251, 48);
+            dgvSocios.Location = new Point(245, 83);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(917, 428);
+            dgvSocios.Size = new Size(917, 422);
             dgvSocios.TabIndex = 2;
             // 
             // textBoxBuscar
             // 
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
-            textBoxBuscar.Location = new Point(299, 14);
+            textBoxBuscar.Location = new Point(293, 48);
             textBoxBuscar.Name = "textBoxBuscar";
             textBoxBuscar.Size = new Size(869, 23);
             textBoxBuscar.TabIndex = 3;
@@ -199,21 +202,34 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(251, 17);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(245, 56);
             label4.Name = "label4";
             label4.Size = new Size(42, 15);
             label4.TabIndex = 4;
             label4.Text = "Buscar";
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.MediumVioletRed;
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1203, 42);
+            panel2.TabIndex = 5;
+            // 
             // FormSocios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1203, 488);
+            BackColor = Color.Black;
+            ClientSize = new Size(1203, 504);
+            Controls.Add(panel2);
             Controls.Add(label4);
             Controls.Add(textBoxBuscar);
             Controls.Add(dgvSocios);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormSocios";
             Text = "FormSocios";
             Load += FormSocios_Load;
@@ -241,5 +257,6 @@
         private Label label3;
         private Label label2;
         private Label label4;
+        private Panel panel2;
     }
 }

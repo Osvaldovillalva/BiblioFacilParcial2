@@ -42,6 +42,7 @@
             label1 = new Label();
             textBoxDiasPrestamo = new TextBox();
             dgvReglas = new DataGridView();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvReglas).BeginInit();
             SuspendLayout();
@@ -60,16 +61,16 @@
             panel1.Controls.Add(textBoxMaximoPrestamo);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(textBoxDiasPrestamo);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, 63);
             panel1.Name = "panel1";
-            panel1.Size = new Size(238, 440);
+            panel1.Size = new Size(238, 450);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.White;
             label5.Location = new Point(34, 256);
             label5.Name = "label5";
             label5.Size = new Size(183, 15);
@@ -97,6 +98,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(34, 190);
             label4.Name = "label4";
             label4.Size = new Size(164, 15);
@@ -115,6 +117,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(29, 116);
             label3.Name = "label3";
             label3.Size = new Size(142, 30);
@@ -135,9 +138,9 @@
             // buttonSalir
             // 
             buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 369);
+            buttonSalir.Location = new Point(0, 384);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(238, 71);
+            buttonSalir.Size = new Size(238, 66);
             buttonSalir.TabIndex = 3;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
@@ -146,6 +149,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(29, 64);
             label2.Name = "label2";
             label2.Size = new Size(197, 15);
@@ -164,6 +168,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(23, 9);
             label1.Name = "label1";
             label1.Size = new Size(148, 15);
@@ -184,19 +189,31 @@
             dgvReglas.AllowUserToAddRows = false;
             dgvReglas.AllowUserToDeleteRows = false;
             dgvReglas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvReglas.Location = new Point(254, 12);
+            dgvReglas.Location = new Point(254, 63);
             dgvReglas.Name = "dgvReglas";
             dgvReglas.ReadOnly = true;
             dgvReglas.RowTemplate.Height = 25;
-            dgvReglas.Size = new Size(632, 416);
+            dgvReglas.Size = new Size(632, 437);
             dgvReglas.TabIndex = 1;
             dgvReglas.CellContentClick += dgvReglas_CellContentClick;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.MediumVioletRed;
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(898, 41);
+            panel2.TabIndex = 2;
+            // 
             // FormReglas
             // 
-            ClientSize = new Size(898, 440);
+            BackColor = Color.Black;
+            ClientSize = new Size(898, 517);
+            Controls.Add(panel2);
             Controls.Add(dgvReglas);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormReglas";
             Text = "FormReglas";
             Load += FormReglas_Load;
@@ -222,5 +239,6 @@
         private Label label4;
         private TextBox textBoxPorcentajerecargo;
         private Label label5;
+        private Panel panel2;
     }
 }

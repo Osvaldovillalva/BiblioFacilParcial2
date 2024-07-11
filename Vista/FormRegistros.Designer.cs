@@ -34,13 +34,14 @@
             label2 = new Label();
             dgvMultas = new DataGridView();
             label3 = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvDevoluciones).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvMultas).BeginInit();
             SuspendLayout();
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(633, 560);
+            buttonSalir.Location = new Point(633, 413);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(138, 64);
             buttonSalir.TabIndex = 0;
@@ -53,11 +54,11 @@
             dgvDevoluciones.AllowUserToAddRows = false;
             dgvDevoluciones.AllowUserToDeleteRows = false;
             dgvDevoluciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDevoluciones.Location = new Point(22, 65);
+            dgvDevoluciones.Location = new Point(22, 107);
             dgvDevoluciones.Name = "dgvDevoluciones";
             dgvDevoluciones.ReadOnly = true;
             dgvDevoluciones.RowTemplate.Height = 25;
-            dgvDevoluciones.Size = new Size(749, 150);
+            dgvDevoluciones.Size = new Size(749, 138);
             dgvDevoluciones.TabIndex = 1;
             // 
             // label1
@@ -72,7 +73,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(22, 36);
+            label2.BackColor = Color.Black;
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(22, 77);
             label2.Name = "label2";
             label2.Size = new Size(78, 15);
             label2.TabIndex = 3;
@@ -87,29 +90,42 @@
             dgvMultas.Name = "dgvMultas";
             dgvMultas.ReadOnly = true;
             dgvMultas.RowTemplate.Height = 25;
-            dgvMultas.Size = new Size(749, 150);
+            dgvMultas.Size = new Size(749, 108);
             dgvMultas.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(22, 248);
             label3.Name = "label3";
             label3.Size = new Size(43, 15);
             label3.TabIndex = 5;
             label3.Text = "Multas";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MediumVioletRed;
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 46);
+            panel1.TabIndex = 6;
+            // 
             // FormRegistros
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 636);
+            BackColor = Color.Black;
+            ClientSize = new Size(800, 489);
+            Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(dgvMultas);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dgvDevoluciones);
             Controls.Add(buttonSalir);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormRegistros";
             Text = "FormRegistros";
             Load += FormRegistros_Load;
@@ -127,5 +143,6 @@
         private Label label2;
         private DataGridView dgvMultas;
         private Label label3;
+        private Panel panel1;
     }
 }
