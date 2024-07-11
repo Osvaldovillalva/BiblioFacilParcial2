@@ -54,22 +54,22 @@ namespace Vista
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 73);
             label1.Name = "label1";
-            label1.Size = new Size(79, 28);
+            label1.Size = new Size(47, 15);
             label1.TabIndex = 0;
             label1.Text = "Usuario";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(12, 126);
             label2.Name = "label2";
-            label2.Size = new Size(110, 28);
+            label2.Size = new Size(67, 15);
             label2.TabIndex = 1;
             label2.Text = "Contraseña";
             // 
@@ -94,7 +94,7 @@ namespace Vista
             // 
             buttonIngresar.BackColor = Color.Black;
             buttonIngresar.FlatAppearance.BorderColor = Color.Red;
-            buttonIngresar.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonIngresar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
             buttonIngresar.Location = new Point(222, 223);
             buttonIngresar.Name = "buttonIngresar";
@@ -108,7 +108,7 @@ namespace Vista
             // 
             buttonCancelar.BackColor = Color.Black;
             buttonCancelar.FlatAppearance.BorderColor = Color.MediumVioletRed;
-            buttonCancelar.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCancelar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
             buttonCancelar.Location = new Point(12, 223);
             buttonCancelar.Name = "buttonCancelar";
@@ -122,7 +122,7 @@ namespace Vista
             // 
             buttonSalir.BackColor = Color.Black;
             buttonSalir.FlatAppearance.BorderColor = Color.White;
-            buttonSalir.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Location = new Point(12, 329);
             buttonSalir.Name = "buttonSalir";
