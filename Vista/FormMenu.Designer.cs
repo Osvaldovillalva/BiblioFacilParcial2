@@ -134,6 +134,8 @@
             buttonSalir.FlatStyle = FlatStyle.Flat;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
+            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
+            buttonSalir.ImageAlign = ContentAlignment.MiddleLeft;
             buttonSalir.Location = new Point(12, 438);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);

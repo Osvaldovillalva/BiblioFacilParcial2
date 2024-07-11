@@ -101,11 +101,13 @@ namespace Vista
             buttonIngresar.FlatStyle = FlatStyle.Flat;
             buttonIngresar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
+            buttonIngresar.Image = (Image)resources.GetObject("buttonIngresar.Image");
+            buttonIngresar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonIngresar.Location = new Point(199, 198);
             buttonIngresar.Name = "buttonIngresar";
             buttonIngresar.Size = new Size(172, 55);
             buttonIngresar.TabIndex = 4;
-            buttonIngresar.Text = "Ingresar";
+            buttonIngresar.Text = "   Ingresar";
             buttonIngresar.UseVisualStyleBackColor = false;
             buttonIngresar.Click += buttonIngresar_Click;
             // 
@@ -117,6 +119,8 @@ namespace Vista
             buttonCancelar.FlatStyle = FlatStyle.Flat;
             buttonCancelar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
+            buttonCancelar.Image = (Image)resources.GetObject("buttonCancelar.Image");
+            buttonCancelar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonCancelar.Location = new Point(12, 198);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(172, 55);
@@ -133,6 +137,8 @@ namespace Vista
             buttonSalir.FlatStyle = FlatStyle.Flat;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
+            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
+            buttonSalir.ImageAlign = ContentAlignment.MiddleLeft;
             buttonSalir.Location = new Point(21, 289);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
