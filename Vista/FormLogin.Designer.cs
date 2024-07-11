@@ -96,7 +96,7 @@ namespace Vista
             buttonIngresar.FlatAppearance.BorderColor = Color.Red;
             buttonIngresar.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
-            buttonIngresar.Location = new Point(241, 223);
+            buttonIngresar.Location = new Point(222, 223);
             buttonIngresar.Name = "buttonIngresar";
             buttonIngresar.Size = new Size(177, 55);
             buttonIngresar.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace Vista
             buttonCancelar.FlatAppearance.BorderColor = Color.MediumVioletRed;
             buttonCancelar.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
-            buttonCancelar.Location = new Point(25, 223);
+            buttonCancelar.Location = new Point(12, 223);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(172, 55);
             buttonCancelar.TabIndex = 5;
@@ -124,9 +124,9 @@ namespace Vista
             buttonSalir.FlatAppearance.BorderColor = Color.White;
             buttonSalir.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(25, 328);
+            buttonSalir.Location = new Point(12, 329);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(393, 55);
+            buttonSalir.Size = new Size(387, 55);
             buttonSalir.TabIndex = 6;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = false;
@@ -138,7 +138,7 @@ namespace Vista
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(792, 40);
+            panel1.Size = new Size(792, 46);
             panel1.TabIndex = 7;
             // 
             // FormLogin

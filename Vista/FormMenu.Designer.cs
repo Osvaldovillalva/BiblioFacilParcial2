@@ -49,10 +49,9 @@
             panel1.Controls.Add(buttonPrestamos);
             panel1.Controls.Add(buttonSocios);
             panel1.Controls.Add(buttonLibros);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, 70);
             panel1.Name = "panel1";
-            panel1.Size = new Size(197, 492);
+            panel1.Size = new Size(197, 422);
             panel1.TabIndex = 0;
             // 
             // button1
@@ -102,7 +101,7 @@
             // button2
             // 
             button2.Dock = DockStyle.Bottom;
-            button2.Location = new Point(0, 421);
+            button2.Location = new Point(0, 320);
             button2.Name = "button2";
             button2.Size = new Size(194, 71);
             button2.TabIndex = 3;
@@ -148,10 +147,9 @@
             panel2.Controls.Add(button2);
             panel2.Controls.Add(buttonCuota);
             panel2.Controls.Add(buttonReglas);
-            panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(606, 0);
+            panel2.Location = new Point(606, 101);
             panel2.Name = "panel2";
-            panel2.Size = new Size(194, 492);
+            panel2.Size = new Size(194, 391);
             panel2.TabIndex = 2;
             panel2.Paint += panel2_Paint;
             // 
@@ -174,6 +172,7 @@
             Controls.Add(panel2);
             Controls.Add(buttonSalir);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormMenu";
             Text = "Menu";
             Load += FormMenu_Load;
