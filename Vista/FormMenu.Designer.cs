@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             buttonSocios = new Button();
             buttonLibros = new Button();
             button1 = new Button();
@@ -37,6 +38,8 @@
             buttonSalir = new Button();
             buttonCobroCuotas = new Button();
             panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonSocios
@@ -72,7 +75,7 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(18, 342);
+            button1.Location = new Point(18, 340);
             button1.Name = "button1";
             button1.Size = new Size(197, 69);
             button1.TabIndex = 2;
@@ -98,7 +101,7 @@
             // 
             button2.FlatStyle = FlatStyle.Popup;
             button2.ForeColor = SystemColors.ButtonFace;
-            button2.Location = new Point(638, 84);
+            button2.Location = new Point(286, 340);
             button2.Name = "button2";
             button2.Size = new Size(194, 71);
             button2.TabIndex = 3;
@@ -110,7 +113,7 @@
             // 
             buttonCuota.FlatStyle = FlatStyle.Popup;
             buttonCuota.ForeColor = SystemColors.ButtonFace;
-            buttonCuota.Location = new Point(638, 269);
+            buttonCuota.Location = new Point(283, 58);
             buttonCuota.Name = "buttonCuota";
             buttonCuota.Size = new Size(197, 69);
             buttonCuota.TabIndex = 2;
@@ -136,7 +139,7 @@
             // 
             buttonCobroCuotas.FlatStyle = FlatStyle.Popup;
             buttonCobroCuotas.ForeColor = SystemColors.ButtonFace;
-            buttonCobroCuotas.Location = new Point(638, 176);
+            buttonCobroCuotas.Location = new Point(286, 171);
             buttonCobroCuotas.Name = "buttonCobroCuotas";
             buttonCobroCuotas.Size = new Size(194, 71);
             buttonCobroCuotas.TabIndex = 3;
@@ -154,12 +157,23 @@
             panel3.Size = new Size(930, 50);
             panel3.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(512, 67);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(406, 408);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(pictureBox1);
             Controls.Add(buttonLibros);
             Controls.Add(buttonPrestamos);
             Controls.Add(buttonSocios);
@@ -173,6 +187,7 @@
             Name = "FormMenu";
             Text = "Menu";
             Load += FormMenu_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -186,5 +201,6 @@
         private Button buttonCuota;
         private Button buttonCobroCuotas;
         private Panel panel3;
+        private PictureBox pictureBox1;
     }
 }
