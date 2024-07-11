@@ -47,6 +47,7 @@
             buttonSocios.FlatAppearance.BorderColor = Color.White;
             buttonSocios.FlatAppearance.BorderSize = 0;
             buttonSocios.FlatStyle = FlatStyle.Flat;
+            buttonSocios.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSocios.ForeColor = SystemColors.ButtonFace;
             buttonSocios.Location = new Point(0, 56);
             buttonSocios.Name = "buttonSocios";
@@ -61,6 +62,7 @@
             buttonLibros.FlatAppearance.BorderColor = Color.White;
             buttonLibros.FlatAppearance.BorderSize = 0;
             buttonLibros.FlatStyle = FlatStyle.Flat;
+            buttonLibros.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonLibros.ForeColor = SystemColors.ButtonFace;
             buttonLibros.Location = new Point(0, 133);
             buttonLibros.Name = "buttonLibros";
@@ -74,10 +76,11 @@
             // 
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(18, 340);
+            button1.Location = new Point(18, 321);
             button1.Name = "button1";
-            button1.Size = new Size(197, 69);
+            button1.Size = new Size(197, 92);
             button1.TabIndex = 2;
             button1.Text = "Consulta Prestamos \r\n\r\n Generar Devoluciones";
             button1.UseVisualStyleBackColor = true;
@@ -88,6 +91,7 @@
             buttonPrestamos.FlatAppearance.BorderColor = Color.White;
             buttonPrestamos.FlatAppearance.BorderSize = 0;
             buttonPrestamos.FlatStyle = FlatStyle.Flat;
+            buttonPrestamos.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonPrestamos.ForeColor = SystemColors.ButtonFace;
             buttonPrestamos.Location = new Point(12, 225);
             buttonPrestamos.Name = "buttonPrestamos";
@@ -100,8 +104,9 @@
             // button2
             // 
             button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonFace;
-            button2.Location = new Point(286, 340);
+            button2.Location = new Point(272, 225);
             button2.Name = "button2";
             button2.Size = new Size(194, 71);
             button2.TabIndex = 3;
@@ -112,6 +117,7 @@
             // buttonCuota
             // 
             buttonCuota.FlatStyle = FlatStyle.Popup;
+            buttonCuota.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCuota.ForeColor = SystemColors.ButtonFace;
             buttonCuota.Location = new Point(283, 58);
             buttonCuota.Name = "buttonCuota";
@@ -126,6 +132,7 @@
             buttonSalir.FlatAppearance.BorderColor = Color.White;
             buttonSalir.FlatAppearance.BorderSize = 0;
             buttonSalir.FlatStyle = FlatStyle.Flat;
+            buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Location = new Point(12, 438);
             buttonSalir.Name = "buttonSalir";
@@ -138,8 +145,9 @@
             // buttonCobroCuotas
             // 
             buttonCobroCuotas.FlatStyle = FlatStyle.Popup;
+            buttonCobroCuotas.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCobroCuotas.ForeColor = SystemColors.ButtonFace;
-            buttonCobroCuotas.Location = new Point(286, 171);
+            buttonCobroCuotas.Location = new Point(283, 133);
             buttonCobroCuotas.Name = "buttonCobroCuotas";
             buttonCobroCuotas.Size = new Size(194, 71);
             buttonCobroCuotas.TabIndex = 3;

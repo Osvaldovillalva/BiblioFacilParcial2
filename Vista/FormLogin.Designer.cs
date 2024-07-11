@@ -57,40 +57,40 @@ namespace Vista
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 85);
+            label1.Location = new Point(41, 81);
             label1.Name = "label1";
-            label1.Size = new Size(47, 15);
+            label1.Size = new Size(72, 25);
             label1.TabIndex = 0;
             label1.Text = "Usuario";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(12, 126);
             label2.Name = "label2";
-            label2.Size = new Size(67, 15);
+            label2.Size = new Size(101, 25);
             label2.TabIndex = 1;
             label2.Text = "Contraseña";
             // 
             // textBoxUsuario
             // 
             textBoxUsuario.BorderStyle = BorderStyle.FixedSingle;
-            textBoxUsuario.Location = new Point(100, 83);
+            textBoxUsuario.Location = new Point(123, 83);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(271, 23);
+            textBoxUsuario.Size = new Size(248, 23);
             textBoxUsuario.TabIndex = 2;
             // 
             // textBoxContraseña
             // 
             textBoxContraseña.BorderStyle = BorderStyle.FixedSingle;
-            textBoxContraseña.Location = new Point(101, 126);
+            textBoxContraseña.Location = new Point(123, 126);
             textBoxContraseña.Name = "textBoxContraseña";
             textBoxContraseña.PasswordChar = '*';
-            textBoxContraseña.Size = new Size(270, 23);
+            textBoxContraseña.Size = new Size(248, 23);
             textBoxContraseña.TabIndex = 3;
             // 
             // buttonIngresar
@@ -99,7 +99,7 @@ namespace Vista
             buttonIngresar.FlatAppearance.BorderColor = Color.White;
             buttonIngresar.FlatAppearance.BorderSize = 0;
             buttonIngresar.FlatStyle = FlatStyle.Flat;
-            buttonIngresar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonIngresar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
             buttonIngresar.Location = new Point(199, 198);
             buttonIngresar.Name = "buttonIngresar";
@@ -115,7 +115,7 @@ namespace Vista
             buttonCancelar.FlatAppearance.BorderColor = Color.White;
             buttonCancelar.FlatAppearance.BorderSize = 0;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
-            buttonCancelar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCancelar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
             buttonCancelar.Location = new Point(12, 198);
             buttonCancelar.Name = "buttonCancelar";
@@ -131,7 +131,7 @@ namespace Vista
             buttonSalir.FlatAppearance.BorderColor = Color.White;
             buttonSalir.FlatAppearance.BorderSize = 0;
             buttonSalir.FlatStyle = FlatStyle.Flat;
-            buttonSalir.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Location = new Point(21, 289);
             buttonSalir.Name = "buttonSalir";
