@@ -40,6 +40,7 @@
             textBoxValorCuota = new TextBox();
             label2 = new Label();
             dgvValorCuota = new DataGridView();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvValorCuota).BeginInit();
             SuspendLayout();
@@ -47,7 +48,7 @@
             // buttonSalir
             // 
             buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 511);
+            buttonSalir.Location = new Point(0, 464);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(200, 67);
             buttonSalir.TabIndex = 0;
@@ -67,15 +68,15 @@
             panel1.Controls.Add(textBoxValorCuota);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(buttonSalir);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, 47);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 578);
+            panel1.Size = new Size(200, 531);
             panel1.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(12, 74);
             label3.Name = "label3";
             label3.Size = new Size(29, 15);
@@ -95,6 +96,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(12, 19);
             label1.Name = "label1";
             label1.Size = new Size(29, 15);
@@ -113,7 +115,7 @@
             // buttonAgregar
             // 
             buttonAgregar.Dock = DockStyle.Bottom;
-            buttonAgregar.Location = new Point(0, 278);
+            buttonAgregar.Location = new Point(0, 231);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(200, 85);
             buttonAgregar.TabIndex = 7;
@@ -124,7 +126,7 @@
             // buttonEliminar
             // 
             buttonEliminar.Dock = DockStyle.Bottom;
-            buttonEliminar.Location = new Point(0, 363);
+            buttonEliminar.Location = new Point(0, 316);
             buttonEliminar.Name = "buttonEliminar";
             buttonEliminar.Size = new Size(200, 75);
             buttonEliminar.TabIndex = 6;
@@ -135,7 +137,7 @@
             // buttonModificar
             // 
             buttonModificar.Dock = DockStyle.Bottom;
-            buttonModificar.Location = new Point(0, 438);
+            buttonModificar.Location = new Point(0, 391);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(200, 73);
             buttonModificar.TabIndex = 5;
@@ -155,6 +157,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ButtonFace;
             label2.Location = new Point(12, 133);
             label2.Name = "label2";
             label2.Size = new Size(99, 15);
@@ -166,20 +169,32 @@
             dgvValorCuota.AllowUserToAddRows = false;
             dgvValorCuota.AllowUserToDeleteRows = false;
             dgvValorCuota.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvValorCuota.Location = new Point(243, 53);
+            dgvValorCuota.Location = new Point(232, 53);
             dgvValorCuota.Name = "dgvValorCuota";
             dgvValorCuota.ReadOnly = true;
             dgvValorCuota.RowTemplate.Height = 25;
-            dgvValorCuota.Size = new Size(617, 331);
+            dgvValorCuota.Size = new Size(617, 481);
             dgvValorCuota.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.MediumVioletRed;
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(868, 47);
+            panel2.TabIndex = 3;
             // 
             // FormCuota
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(895, 578);
+            BackColor = Color.Black;
+            ClientSize = new Size(868, 578);
+            Controls.Add(panel2);
             Controls.Add(dgvValorCuota);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormCuota";
             Text = "FormCuota";
             Load += FormCuota_Load;
@@ -203,5 +218,6 @@
         private Button buttonAgregar;
         private Label label3;
         private ComboBox comboBoxMes;
+        private Panel panel2;
     }
 }
