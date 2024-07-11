@@ -12,7 +12,7 @@ namespace Vista
 
             // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
             this.Location = new Point(100, 100);
-
+            ConfigurarEventosMouseBotones(this);
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -60,6 +60,25 @@ namespace Vista
 
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ConfigurarEventosMouseBotones(Control parent)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                if (control is Button button)
+                {
+                    // Asociar eventos MouseEnter y MouseLeave al botón
+                    button.MouseEnter += (sender, e) => CambiarColorBoton(button, Color.MediumVioletRed);
+                    button.MouseLeave += (sender, e) => CambiarColorBoton(button, Color.Black);
+                }
+            }
+        }
+        private void CambiarColorBoton(Button button, Color color)
+        {
+            button.BackColor = color;
+        }
     }
 }

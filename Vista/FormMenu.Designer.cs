@@ -34,24 +34,18 @@
             buttonPrestamos = new Button();
             button2 = new Button();
             buttonCuota = new Button();
-            buttonReglas = new Button();
             buttonSalir = new Button();
-            panel2 = new Panel();
             buttonCobroCuotas = new Button();
             panel3 = new Panel();
-            panel1 = new Panel();
-            panel2.SuspendLayout();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // buttonSocios
             // 
-            buttonSocios.Dock = DockStyle.Top;
             buttonSocios.FlatAppearance.BorderColor = Color.White;
-            buttonSocios.FlatAppearance.BorderSize = 2;
+            buttonSocios.FlatAppearance.BorderSize = 0;
             buttonSocios.FlatStyle = FlatStyle.Flat;
             buttonSocios.ForeColor = SystemColors.ButtonFace;
-            buttonSocios.Location = new Point(0, 142);
+            buttonSocios.Location = new Point(0, 56);
             buttonSocios.Name = "buttonSocios";
             buttonSocios.Size = new Size(203, 71);
             buttonSocios.TabIndex = 1;
@@ -61,12 +55,11 @@
             // 
             // buttonLibros
             // 
-            buttonLibros.Dock = DockStyle.Top;
             buttonLibros.FlatAppearance.BorderColor = Color.White;
-            buttonLibros.FlatAppearance.BorderSize = 2;
+            buttonLibros.FlatAppearance.BorderSize = 0;
             buttonLibros.FlatStyle = FlatStyle.Flat;
             buttonLibros.ForeColor = SystemColors.ButtonFace;
-            buttonLibros.Location = new Point(0, 0);
+            buttonLibros.Location = new Point(0, 133);
             buttonLibros.Name = "buttonLibros";
             buttonLibros.Size = new Size(203, 71);
             buttonLibros.TabIndex = 0;
@@ -76,8 +69,10 @@
             // 
             // button1
             // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(253, 189);
+            button1.Location = new Point(18, 342);
             button1.Name = "button1";
             button1.Size = new Size(197, 69);
             button1.TabIndex = 2;
@@ -87,12 +82,11 @@
             // 
             // buttonPrestamos
             // 
-            buttonPrestamos.Dock = DockStyle.Top;
             buttonPrestamos.FlatAppearance.BorderColor = Color.White;
-            buttonPrestamos.FlatAppearance.BorderSize = 2;
+            buttonPrestamos.FlatAppearance.BorderSize = 0;
             buttonPrestamos.FlatStyle = FlatStyle.Flat;
             buttonPrestamos.ForeColor = SystemColors.ButtonFace;
-            buttonPrestamos.Location = new Point(0, 71);
+            buttonPrestamos.Location = new Point(12, 225);
             buttonPrestamos.Name = "buttonPrestamos";
             buttonPrestamos.Size = new Size(203, 71);
             buttonPrestamos.TabIndex = 2;
@@ -102,6 +96,7 @@
             // 
             // button2
             // 
+            button2.FlatStyle = FlatStyle.Popup;
             button2.ForeColor = SystemColors.ButtonFace;
             button2.Location = new Point(638, 84);
             button2.Name = "button2";
@@ -113,6 +108,7 @@
             // 
             // buttonCuota
             // 
+            buttonCuota.FlatStyle = FlatStyle.Popup;
             buttonCuota.ForeColor = SystemColors.ButtonFace;
             buttonCuota.Location = new Point(638, 269);
             buttonCuota.Name = "buttonCuota";
@@ -122,21 +118,10 @@
             buttonCuota.UseVisualStyleBackColor = true;
             buttonCuota.Click += buttonCuota_Click;
             // 
-            // buttonReglas
-            // 
-            buttonReglas.ForeColor = SystemColors.ButtonFace;
-            buttonReglas.Location = new Point(-15, 289);
-            buttonReglas.Name = "buttonReglas";
-            buttonReglas.Size = new Size(194, 71);
-            buttonReglas.TabIndex = 2;
-            buttonReglas.Text = "Reglas de la Biblioteca";
-            buttonReglas.UseVisualStyleBackColor = true;
-            buttonReglas.Click += buttonReglas_Click;
-            // 
             // buttonSalir
             // 
             buttonSalir.FlatAppearance.BorderColor = Color.White;
-            buttonSalir.FlatAppearance.BorderSize = 2;
+            buttonSalir.FlatAppearance.BorderSize = 0;
             buttonSalir.FlatStyle = FlatStyle.Flat;
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Location = new Point(12, 438);
@@ -147,17 +132,9 @@
             buttonSalir.UseVisualStyleBackColor = true;
             buttonSalir.Click += buttonSalir_Click;
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(buttonReglas);
-            panel2.Location = new Point(411, 70);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(194, 391);
-            panel2.TabIndex = 2;
-            panel2.Paint += panel2_Paint;
-            // 
             // buttonCobroCuotas
             // 
+            buttonCobroCuotas.FlatStyle = FlatStyle.Popup;
             buttonCobroCuotas.ForeColor = SystemColors.ButtonFace;
             buttonCobroCuotas.Location = new Point(638, 176);
             buttonCobroCuotas.Name = "buttonCobroCuotas";
@@ -177,36 +154,25 @@
             panel3.Size = new Size(930, 50);
             panel3.TabIndex = 3;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(buttonSocios);
-            panel1.Controls.Add(buttonPrestamos);
-            panel1.Controls.Add(buttonLibros);
-            panel1.Location = new Point(5, 56);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(203, 376);
-            panel1.TabIndex = 0;
-            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(buttonLibros);
+            Controls.Add(buttonPrestamos);
+            Controls.Add(buttonSocios);
             Controls.Add(button1);
             Controls.Add(buttonCuota);
             Controls.Add(buttonCobroCuotas);
             Controls.Add(button2);
             Controls.Add(panel3);
-            Controls.Add(panel2);
             Controls.Add(buttonSalir);
-            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormMenu";
             Text = "Menu";
             Load += FormMenu_Load;
-            panel2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -215,13 +181,10 @@
         private Button buttonSalir;
         private Button buttonSocios;
         private Button buttonPrestamos;
-        private Button buttonReglas;
         private Button button1;
         private Button button2;
         private Button buttonCuota;
-        private Panel panel2;
         private Button buttonCobroCuotas;
         private Panel panel3;
-        private Panel panel1;
     }
 }
