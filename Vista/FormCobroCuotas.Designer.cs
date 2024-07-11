@@ -42,7 +42,7 @@
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(757, 397);
+            buttonSalir.Location = new Point(757, 420);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(146, 45);
             buttonSalir.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(35, 50);
+            label1.Location = new Point(35, 66);
             label1.Name = "label1";
             label1.Size = new Size(88, 15);
             label1.TabIndex = 1;
@@ -86,25 +86,25 @@
             dgvCuotasMensuales.AllowUserToAddRows = false;
             dgvCuotasMensuales.AllowUserToDeleteRows = false;
             dgvCuotasMensuales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCuotasMensuales.Location = new Point(35, 241);
+            dgvCuotasMensuales.Location = new Point(35, 239);
             dgvCuotasMensuales.Name = "dgvCuotasMensuales";
             dgvCuotasMensuales.ReadOnly = true;
             dgvCuotasMensuales.RowTemplate.Height = 25;
-            dgvCuotasMensuales.Size = new Size(868, 150);
+            dgvCuotasMensuales.Size = new Size(868, 127);
             dgvCuotasMensuales.TabIndex = 4;
             // 
             // listBoxCarritoCuotas
             // 
             listBoxCarritoCuotas.FormattingEnabled = true;
             listBoxCarritoCuotas.ItemHeight = 15;
-            listBoxCarritoCuotas.Location = new Point(35, 397);
+            listBoxCarritoCuotas.Location = new Point(35, 382);
             listBoxCarritoCuotas.Name = "listBoxCarritoCuotas";
-            listBoxCarritoCuotas.Size = new Size(304, 109);
+            listBoxCarritoCuotas.Size = new Size(303, 109);
             listBoxCarritoCuotas.TabIndex = 5;
             // 
             // buttonGenerarPago
             // 
-            buttonGenerarPago.Location = new Point(378, 408);
+            buttonGenerarPago.Location = new Point(364, 416);
             buttonGenerarPago.Name = "buttonGenerarPago";
             buttonGenerarPago.Size = new Size(130, 53);
             buttonGenerarPago.TabIndex = 6;
@@ -118,7 +118,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(930, 34);
+            panel1.Size = new Size(930, 50);
             panel1.TabIndex = 7;
             // 
             // FormCobroCuotas

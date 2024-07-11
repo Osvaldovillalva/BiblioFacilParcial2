@@ -203,7 +203,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(930, 41);
+            panel2.Size = new Size(930, 50);
             panel2.TabIndex = 2;
             // 
             // FormReglas

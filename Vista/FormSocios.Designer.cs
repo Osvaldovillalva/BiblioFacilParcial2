@@ -183,17 +183,17 @@
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(245, 83);
+            dgvSocios.Location = new Point(245, 100);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(673, 405);
+            dgvSocios.Size = new Size(673, 388);
             dgvSocios.TabIndex = 2;
             // 
             // textBoxBuscar
             // 
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
-            textBoxBuscar.Location = new Point(293, 48);
+            textBoxBuscar.Location = new Point(293, 62);
             textBoxBuscar.Name = "textBoxBuscar";
             textBoxBuscar.Size = new Size(625, 23);
             textBoxBuscar.TabIndex = 3;
@@ -203,7 +203,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.White;
-            label4.Location = new Point(245, 56);
+            label4.Location = new Point(245, 64);
             label4.Name = "label4";
             label4.Size = new Size(42, 15);
             label4.TabIndex = 4;
@@ -215,7 +215,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(930, 42);
+            panel2.Size = new Size(930, 50);
             panel2.TabIndex = 5;
             // 
             // FormSocios
