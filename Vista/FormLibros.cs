@@ -21,7 +21,7 @@ namespace Vista
             InitializeComponent();
             controladoraLibros = new ControladoraLibros(); // Inicializa la controladora
             dgvLibros.SelectionChanged += dgvLibros_SelectionChanged;
-            this.WindowState = FormWindowState.Maximized;
+            
         }
 
 
@@ -280,6 +280,11 @@ namespace Vista
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

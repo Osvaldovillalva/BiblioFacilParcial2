@@ -23,7 +23,7 @@ namespace Vista
 
             controladoraReglas = new ControladoraReglas();
             dgvReglas.SelectionChanged += DgvReglas_SelectionChanged;
-            this.WindowState = FormWindowState.Maximized;
+            
 
         }
 

@@ -26,7 +26,7 @@ namespace Vista
             controladoraSocios = new ControladoraSocios();
             controladoraReglas = new ControladoraReglas();
             controladoraMultas = new ControladoraMultas();
-            this.WindowState = FormWindowState.Maximized;// Inicializar la variable miembro correctamente
+            // Inicializar la variable miembro correctamente
         }
 
 

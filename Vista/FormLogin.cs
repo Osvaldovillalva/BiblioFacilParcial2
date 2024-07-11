@@ -8,7 +8,7 @@ namespace Vista
         public FormLogin()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

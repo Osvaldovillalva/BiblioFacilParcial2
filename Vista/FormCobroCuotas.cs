@@ -26,7 +26,7 @@ namespace Vista
 
             dgvSocios.SelectionChanged += dgvSocios_SelectionChanged;
             dgvCuotasMensuales.SelectionChanged += dgvCuotasMensuales_SelectionChanged;
-            this.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
