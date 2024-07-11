@@ -23,7 +23,10 @@ namespace Vista
             controladoraSocios = new ControladoraSocios(); // Inicializa la controladora
             controladoraCuotas = new ControladoraCuotas();
             dgvSocios.SelectionChanged += dgvSocios_SelectionChanged;
-            
+            this.StartPosition = FormStartPosition.Manual;
+
+            // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
+            this.Location = new Point(100, 100);
         }
 
         private void FormSocios_Load(object sender, EventArgs e)
@@ -270,5 +273,9 @@ namespace Vista
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

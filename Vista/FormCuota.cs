@@ -22,7 +22,10 @@ namespace Vista
             InitializeComponent();
             controladoraCuotas = new ControladoraCuotas();
             dgvValorCuota.SelectionChanged += dgvValorCuota_SelectionChanged;
-           
+            this.StartPosition = FormStartPosition.Manual;
+
+            // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
+            this.Location = new Point(100, 100);
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)

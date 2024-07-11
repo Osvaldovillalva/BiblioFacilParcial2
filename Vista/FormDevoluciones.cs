@@ -27,6 +27,10 @@ namespace Vista
             controladoraReglas = new ControladoraReglas();
             controladoraMultas = new ControladoraMultas();
             // Inicializar la variable miembro correctamente
+            this.StartPosition = FormStartPosition.Manual;
+
+            // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
+            this.Location = new Point(100, 100);
         }
 
 

@@ -23,7 +23,10 @@ namespace Vista
 
             controladoraReglas = new ControladoraReglas();
             dgvReglas.SelectionChanged += DgvReglas_SelectionChanged;
-            
+            this.StartPosition = FormStartPosition.Manual;
+
+            // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
+            this.Location = new Point(100, 100);
 
         }
 
