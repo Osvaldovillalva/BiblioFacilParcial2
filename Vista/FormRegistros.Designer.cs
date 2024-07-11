@@ -41,7 +41,7 @@
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(633, 413);
+            buttonSalir.Location = new Point(767, 411);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(138, 64);
             buttonSalir.TabIndex = 0;
@@ -58,7 +58,7 @@
             dgvDevoluciones.Name = "dgvDevoluciones";
             dgvDevoluciones.ReadOnly = true;
             dgvDevoluciones.RowTemplate.Height = 25;
-            dgvDevoluciones.Size = new Size(749, 138);
+            dgvDevoluciones.Size = new Size(883, 138);
             dgvDevoluciones.TabIndex = 1;
             // 
             // label1
@@ -90,7 +90,7 @@
             dgvMultas.Name = "dgvMultas";
             dgvMultas.ReadOnly = true;
             dgvMultas.RowTemplate.Height = 25;
-            dgvMultas.Size = new Size(749, 108);
+            dgvMultas.Size = new Size(883, 108);
             dgvMultas.TabIndex = 4;
             // 
             // label3
@@ -109,7 +109,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 46);
+            panel1.Size = new Size(930, 46);
             panel1.TabIndex = 6;
             // 
             // FormRegistros
@@ -117,7 +117,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 489);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(dgvMultas);

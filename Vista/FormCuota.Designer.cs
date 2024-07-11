@@ -48,9 +48,9 @@
             // buttonSalir
             // 
             buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 464);
+            buttonSalir.Location = new Point(0, 374);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(200, 67);
+            buttonSalir.Size = new Size(187, 61);
             buttonSalir.TabIndex = 0;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
@@ -68,16 +68,16 @@
             panel1.Controls.Add(textBoxValorCuota);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(buttonSalir);
-            panel1.Location = new Point(0, 47);
+            panel1.Location = new Point(12, 53);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 531);
+            panel1.Size = new Size(187, 435);
             panel1.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(12, 74);
+            label3.Location = new Point(12, 53);
             label3.Name = "label3";
             label3.Size = new Size(29, 15);
             label3.TabIndex = 11;
@@ -87,7 +87,7 @@
             // 
             comboBoxMes.FormattingEnabled = true;
             comboBoxMes.Items.AddRange(new object[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" });
-            comboBoxMes.Location = new Point(12, 92);
+            comboBoxMes.Location = new Point(12, 71);
             comboBoxMes.Name = "comboBoxMes";
             comboBoxMes.Size = new Size(165, 23);
             comboBoxMes.TabIndex = 10;
@@ -97,7 +97,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(12, 19);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
             label1.Size = new Size(29, 15);
             label1.TabIndex = 9;
@@ -106,7 +106,7 @@
             // textBoxAño
             // 
             textBoxAño.BorderStyle = BorderStyle.FixedSingle;
-            textBoxAño.Location = new Point(12, 37);
+            textBoxAño.Location = new Point(12, 27);
             textBoxAño.Name = "textBoxAño";
             textBoxAño.Size = new Size(165, 23);
             textBoxAño.TabIndex = 8;
@@ -115,9 +115,9 @@
             // buttonAgregar
             // 
             buttonAgregar.Dock = DockStyle.Bottom;
-            buttonAgregar.Location = new Point(0, 231);
+            buttonAgregar.Location = new Point(0, 194);
             buttonAgregar.Name = "buttonAgregar";
-            buttonAgregar.Size = new Size(200, 85);
+            buttonAgregar.Size = new Size(187, 61);
             buttonAgregar.TabIndex = 7;
             buttonAgregar.Text = "Agregar";
             buttonAgregar.UseVisualStyleBackColor = true;
@@ -126,9 +126,9 @@
             // buttonEliminar
             // 
             buttonEliminar.Dock = DockStyle.Bottom;
-            buttonEliminar.Location = new Point(0, 316);
+            buttonEliminar.Location = new Point(0, 255);
             buttonEliminar.Name = "buttonEliminar";
-            buttonEliminar.Size = new Size(200, 75);
+            buttonEliminar.Size = new Size(187, 59);
             buttonEliminar.TabIndex = 6;
             buttonEliminar.Text = "Eliminar";
             buttonEliminar.UseVisualStyleBackColor = true;
@@ -137,9 +137,9 @@
             // buttonModificar
             // 
             buttonModificar.Dock = DockStyle.Bottom;
-            buttonModificar.Location = new Point(0, 391);
+            buttonModificar.Location = new Point(0, 314);
             buttonModificar.Name = "buttonModificar";
-            buttonModificar.Size = new Size(200, 73);
+            buttonModificar.Size = new Size(187, 60);
             buttonModificar.TabIndex = 5;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
@@ -148,9 +148,9 @@
             // textBoxValorCuota
             // 
             textBoxValorCuota.BorderStyle = BorderStyle.FixedSingle;
-            textBoxValorCuota.Location = new Point(12, 165);
+            textBoxValorCuota.Location = new Point(12, 125);
             textBoxValorCuota.Name = "textBoxValorCuota";
-            textBoxValorCuota.Size = new Size(178, 23);
+            textBoxValorCuota.Size = new Size(165, 23);
             textBoxValorCuota.TabIndex = 4;
             textBoxValorCuota.TextChanged += textBoxValorCuota_TextChanged;
             // 
@@ -158,7 +158,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(12, 133);
+            label2.Location = new Point(12, 97);
             label2.Name = "label2";
             label2.Size = new Size(99, 15);
             label2.TabIndex = 2;
@@ -169,11 +169,11 @@
             dgvValorCuota.AllowUserToAddRows = false;
             dgvValorCuota.AllowUserToDeleteRows = false;
             dgvValorCuota.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvValorCuota.Location = new Point(232, 53);
+            dgvValorCuota.Location = new Point(217, 53);
             dgvValorCuota.Name = "dgvValorCuota";
             dgvValorCuota.ReadOnly = true;
             dgvValorCuota.RowTemplate.Height = 25;
-            dgvValorCuota.Size = new Size(617, 481);
+            dgvValorCuota.Size = new Size(693, 435);
             dgvValorCuota.TabIndex = 2;
             // 
             // panel2
@@ -182,7 +182,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(868, 47);
+            panel2.Size = new Size(930, 47);
             panel2.TabIndex = 3;
             // 
             // FormCuota
@@ -190,10 +190,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(868, 578);
+            ClientSize = new Size(930, 500);
+            Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(dgvValorCuota);
-            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormCuota";
             Text = "FormCuota";

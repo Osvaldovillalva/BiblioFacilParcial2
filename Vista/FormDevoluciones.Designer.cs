@@ -39,7 +39,7 @@
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(654, 377);
+            buttonSalir.Location = new Point(804, 417);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(114, 71);
             buttonSalir.TabIndex = 0;
@@ -56,7 +56,7 @@
             dgvPrestamos.Name = "dgvPrestamos";
             dgvPrestamos.ReadOnly = true;
             dgvPrestamos.RowTemplate.Height = 25;
-            dgvPrestamos.Size = new Size(745, 276);
+            dgvPrestamos.Size = new Size(895, 316);
             dgvPrestamos.TabIndex = 1;
             // 
             // textBoxBuscar
@@ -64,7 +64,7 @@
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
             textBoxBuscar.Location = new Point(90, 66);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.Size = new Size(678, 23);
+            textBoxBuscar.Size = new Size(828, 23);
             textBoxBuscar.TabIndex = 2;
             textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;
             // 
@@ -80,7 +80,7 @@
             // 
             // buttonGenerarDevolucion
             // 
-            buttonGenerarDevolucion.Location = new Point(33, 377);
+            buttonGenerarDevolucion.Location = new Point(23, 417);
             buttonGenerarDevolucion.Name = "buttonGenerarDevolucion";
             buttonGenerarDevolucion.Size = new Size(156, 71);
             buttonGenerarDevolucion.TabIndex = 4;
@@ -94,7 +94,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(783, 47);
+            panel1.Size = new Size(930, 47);
             panel1.TabIndex = 5;
             // 
             // FormDevoluciones
@@ -102,7 +102,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(783, 450);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel1);
             Controls.Add(buttonGenerarDevolucion);
             Controls.Add(label1);

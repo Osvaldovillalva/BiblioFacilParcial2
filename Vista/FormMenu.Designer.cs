@@ -172,7 +172,7 @@
             panel3.ForeColor = Color.MediumVioletRed;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(800, 50);
+            panel3.Size = new Size(930, 50);
             panel3.TabIndex = 3;
             // 
             // FormMenu
@@ -180,7 +180,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 492);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(buttonSalir);

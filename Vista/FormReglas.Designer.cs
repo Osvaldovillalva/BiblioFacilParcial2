@@ -61,9 +61,9 @@
             panel1.Controls.Add(textBoxMaximoPrestamo);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(textBoxDiasPrestamo);
-            panel1.Location = new Point(0, 63);
+            panel1.Location = new Point(10, 46);
             panel1.Name = "panel1";
-            panel1.Size = new Size(238, 450);
+            panel1.Size = new Size(238, 442);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -138,7 +138,7 @@
             // buttonSalir
             // 
             buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 384);
+            buttonSalir.Location = new Point(0, 376);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(238, 66);
             buttonSalir.TabIndex = 3;
@@ -193,7 +193,7 @@
             dgvReglas.Name = "dgvReglas";
             dgvReglas.ReadOnly = true;
             dgvReglas.RowTemplate.Height = 25;
-            dgvReglas.Size = new Size(632, 437);
+            dgvReglas.Size = new Size(664, 425);
             dgvReglas.TabIndex = 1;
             dgvReglas.CellContentClick += dgvReglas_CellContentClick;
             // 
@@ -203,13 +203,13 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(898, 41);
+            panel2.Size = new Size(930, 41);
             panel2.TabIndex = 2;
             // 
             // FormReglas
             // 
             BackColor = Color.Black;
-            ClientSize = new Size(898, 517);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel2);
             Controls.Add(dgvReglas);
             Controls.Add(panel1);

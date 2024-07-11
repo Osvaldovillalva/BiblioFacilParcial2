@@ -51,7 +51,7 @@
             // buttonSalir
             // 
             buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 437);
+            buttonSalir.Location = new Point(0, 392);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(238, 47);
             buttonSalir.TabIndex = 0;
@@ -76,13 +76,13 @@
             panel1.Controls.Add(buttonSalir);
             panel1.Location = new Point(4, 47);
             panel1.Name = "panel1";
-            panel1.Size = new Size(240, 486);
+            panel1.Size = new Size(240, 441);
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
             // buttonLimpiar
             // 
-            buttonLimpiar.Location = new Point(34, 199);
+            buttonLimpiar.Location = new Point(36, 154);
             buttonLimpiar.Name = "buttonLimpiar";
             buttonLimpiar.Size = new Size(166, 46);
             buttonLimpiar.TabIndex = 9;
@@ -93,7 +93,7 @@
             // textBoxCantidad
             // 
             textBoxCantidad.BorderStyle = BorderStyle.FixedSingle;
-            textBoxCantidad.Location = new Point(11, 170);
+            textBoxCantidad.Location = new Point(11, 125);
             textBoxCantidad.Name = "textBoxCantidad";
             textBoxCantidad.Size = new Size(216, 23);
             textBoxCantidad.TabIndex = 8;
@@ -103,7 +103,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(11, 142);
+            label3.Location = new Point(11, 107);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 7;
@@ -112,7 +112,7 @@
             // textBoxAutor
             // 
             textBoxAutor.BorderStyle = BorderStyle.FixedSingle;
-            textBoxAutor.Location = new Point(11, 102);
+            textBoxAutor.Location = new Point(11, 71);
             textBoxAutor.Name = "textBoxAutor";
             textBoxAutor.Size = new Size(216, 23);
             textBoxAutor.TabIndex = 6;
@@ -122,7 +122,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(11, 74);
+            label2.Location = new Point(11, 53);
             label2.Name = "label2";
             label2.Size = new Size(103, 15);
             label2.TabIndex = 5;
@@ -131,7 +131,7 @@
             // textBoxTitulo
             // 
             textBoxTitulo.BorderStyle = BorderStyle.FixedSingle;
-            textBoxTitulo.Location = new Point(11, 35);
+            textBoxTitulo.Location = new Point(11, 27);
             textBoxTitulo.Name = "textBoxTitulo";
             textBoxTitulo.Size = new Size(216, 23);
             textBoxTitulo.TabIndex = 4;
@@ -141,7 +141,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(16, 17);
+            label1.Location = new Point(11, 9);
             label1.Name = "label1";
             label1.Size = new Size(37, 15);
             label1.TabIndex = 3;
@@ -150,7 +150,7 @@
             // buttonAgregar
             // 
             buttonAgregar.Dock = DockStyle.Bottom;
-            buttonAgregar.Location = new Point(0, 251);
+            buttonAgregar.Location = new Point(0, 206);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(238, 69);
             buttonAgregar.TabIndex = 2;
@@ -161,7 +161,7 @@
             // buttonModificar
             // 
             buttonModificar.Dock = DockStyle.Bottom;
-            buttonModificar.Location = new Point(0, 320);
+            buttonModificar.Location = new Point(0, 275);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(238, 60);
             buttonModificar.TabIndex = 1;
@@ -172,7 +172,7 @@
             // buttonBorrar
             // 
             buttonBorrar.Dock = DockStyle.Bottom;
-            buttonBorrar.Location = new Point(0, 380);
+            buttonBorrar.Location = new Point(0, 335);
             buttonBorrar.Name = "buttonBorrar";
             buttonBorrar.Size = new Size(238, 57);
             buttonBorrar.TabIndex = 0;
@@ -189,7 +189,7 @@
             dgvLibros.Name = "dgvLibros";
             dgvLibros.ReadOnly = true;
             dgvLibros.RowTemplate.Height = 25;
-            dgvLibros.Size = new Size(542, 424);
+            dgvLibros.Size = new Size(669, 387);
             dgvLibros.TabIndex = 2;
             dgvLibros.CellContentClick += dgvLibros_CellContentClick;
             // 
@@ -198,7 +198,7 @@
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
             textBoxBuscar.Location = new Point(303, 57);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.Size = new Size(485, 23);
+            textBoxBuscar.Size = new Size(615, 23);
             textBoxBuscar.TabIndex = 3;
             textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;
             // 
@@ -219,7 +219,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 41);
+            panel2.Size = new Size(930, 41);
             panel2.TabIndex = 5;
             panel2.Paint += panel2_Paint;
             // 
@@ -228,7 +228,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 537);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel2);
             Controls.Add(label4);
             Controls.Add(textBoxBuscar);

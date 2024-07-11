@@ -78,7 +78,7 @@
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(917, 110);
+            dgvSocios.Size = new Size(868, 110);
             dgvSocios.TabIndex = 3;
             // 
             // dgvCuotasMensuales
@@ -90,7 +90,7 @@
             dgvCuotasMensuales.Name = "dgvCuotasMensuales";
             dgvCuotasMensuales.ReadOnly = true;
             dgvCuotasMensuales.RowTemplate.Height = 25;
-            dgvCuotasMensuales.Size = new Size(917, 150);
+            dgvCuotasMensuales.Size = new Size(868, 150);
             dgvCuotasMensuales.TabIndex = 4;
             // 
             // listBoxCarritoCuotas
@@ -118,7 +118,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(979, 34);
+            panel1.Size = new Size(930, 34);
             panel1.TabIndex = 7;
             // 
             // FormCobroCuotas
@@ -126,7 +126,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(979, 516);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel1);
             Controls.Add(buttonGenerarPago);
             Controls.Add(listBoxCarritoCuotas);

@@ -56,7 +56,7 @@ namespace Vista
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 73);
+            label1.Location = new Point(12, 85);
             label1.Name = "label1";
             label1.Size = new Size(47, 15);
             label1.TabIndex = 0;
@@ -76,18 +76,18 @@ namespace Vista
             // textBoxUsuario
             // 
             textBoxUsuario.BorderStyle = BorderStyle.FixedSingle;
-            textBoxUsuario.Location = new Point(138, 78);
+            textBoxUsuario.Location = new Point(100, 83);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(261, 23);
+            textBoxUsuario.Size = new Size(271, 23);
             textBoxUsuario.TabIndex = 2;
             // 
             // textBoxContraseña
             // 
             textBoxContraseña.BorderStyle = BorderStyle.FixedSingle;
-            textBoxContraseña.Location = new Point(139, 135);
+            textBoxContraseña.Location = new Point(101, 126);
             textBoxContraseña.Name = "textBoxContraseña";
             textBoxContraseña.PasswordChar = '*';
-            textBoxContraseña.Size = new Size(260, 23);
+            textBoxContraseña.Size = new Size(270, 23);
             textBoxContraseña.TabIndex = 3;
             // 
             // buttonIngresar
@@ -96,9 +96,9 @@ namespace Vista
             buttonIngresar.FlatAppearance.BorderColor = Color.MediumVioletRed;
             buttonIngresar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
-            buttonIngresar.Location = new Point(222, 223);
+            buttonIngresar.Location = new Point(199, 198);
             buttonIngresar.Name = "buttonIngresar";
-            buttonIngresar.Size = new Size(177, 55);
+            buttonIngresar.Size = new Size(172, 55);
             buttonIngresar.TabIndex = 4;
             buttonIngresar.Text = "Ingresar";
             buttonIngresar.UseVisualStyleBackColor = false;
@@ -110,7 +110,7 @@ namespace Vista
             buttonCancelar.FlatAppearance.BorderColor = Color.MediumVioletRed;
             buttonCancelar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
-            buttonCancelar.Location = new Point(12, 223);
+            buttonCancelar.Location = new Point(12, 198);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(172, 55);
             buttonCancelar.TabIndex = 5;
@@ -124,9 +124,9 @@ namespace Vista
             buttonSalir.FlatAppearance.BorderColor = Color.White;
             buttonSalir.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(12, 329);
+            buttonSalir.Location = new Point(12, 285);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(387, 55);
+            buttonSalir.Size = new Size(359, 55);
             buttonSalir.TabIndex = 6;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = false;
@@ -138,7 +138,7 @@ namespace Vista
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(792, 46);
+            panel1.Size = new Size(930, 46);
             panel1.TabIndex = 7;
             // 
             // FormLogin
@@ -146,7 +146,7 @@ namespace Vista
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(792, 433);
+            ClientSize = new Size(930, 500);
             Controls.Add(panel1);
             Controls.Add(buttonSalir);
             Controls.Add(buttonCancelar);
