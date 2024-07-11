@@ -33,12 +33,13 @@
             textBoxBuscar = new TextBox();
             label1 = new Label();
             buttonGenerarDevolucion = new Button();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvPrestamos).BeginInit();
             SuspendLayout();
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(654, 356);
+            buttonSalir.Location = new Point(654, 377);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(114, 71);
             buttonSalir.TabIndex = 0;
@@ -51,7 +52,7 @@
             dgvPrestamos.AllowUserToAddRows = false;
             dgvPrestamos.AllowUserToDeleteRows = false;
             dgvPrestamos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPrestamos.Location = new Point(23, 59);
+            dgvPrestamos.Location = new Point(23, 95);
             dgvPrestamos.Name = "dgvPrestamos";
             dgvPrestamos.ReadOnly = true;
             dgvPrestamos.RowTemplate.Height = 25;
@@ -61,7 +62,7 @@
             // textBoxBuscar
             // 
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
-            textBoxBuscar.Location = new Point(90, 26);
+            textBoxBuscar.Location = new Point(90, 66);
             textBoxBuscar.Name = "textBoxBuscar";
             textBoxBuscar.Size = new Size(678, 23);
             textBoxBuscar.TabIndex = 2;
@@ -70,7 +71,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 28);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(23, 66);
             label1.Name = "label1";
             label1.Size = new Size(42, 15);
             label1.TabIndex = 3;
@@ -78,7 +80,7 @@
             // 
             // buttonGenerarDevolucion
             // 
-            buttonGenerarDevolucion.Location = new Point(33, 356);
+            buttonGenerarDevolucion.Location = new Point(33, 377);
             buttonGenerarDevolucion.Name = "buttonGenerarDevolucion";
             buttonGenerarDevolucion.Size = new Size(156, 71);
             buttonGenerarDevolucion.TabIndex = 4;
@@ -86,16 +88,28 @@
             buttonGenerarDevolucion.UseVisualStyleBackColor = true;
             buttonGenerarDevolucion.Click += buttonGenerarDevolucion_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MediumVioletRed;
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(783, 47);
+            panel1.TabIndex = 5;
+            // 
             // FormDevoluciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(783, 450);
+            Controls.Add(panel1);
             Controls.Add(buttonGenerarDevolucion);
             Controls.Add(label1);
             Controls.Add(textBoxBuscar);
             Controls.Add(dgvPrestamos);
             Controls.Add(buttonSalir);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormDevoluciones";
             Text = "FormDevoluciones";
             Load += FormDevoluciones_Load;
@@ -111,5 +125,6 @@
         private TextBox textBoxBuscar;
         private Label label1;
         private Button buttonGenerarDevolucion;
+        private Panel panel1;
     }
 }
