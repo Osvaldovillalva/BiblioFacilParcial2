@@ -96,7 +96,9 @@ namespace Vista
             // buttonIngresar
             // 
             buttonIngresar.BackColor = Color.Black;
-            buttonIngresar.FlatAppearance.BorderColor = Color.MediumVioletRed;
+            buttonIngresar.FlatAppearance.BorderColor = Color.White;
+            buttonIngresar.FlatAppearance.BorderSize = 0;
+            buttonIngresar.FlatStyle = FlatStyle.Flat;
             buttonIngresar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
             buttonIngresar.Location = new Point(199, 198);
@@ -106,11 +108,14 @@ namespace Vista
             buttonIngresar.Text = "Ingresar";
             buttonIngresar.UseVisualStyleBackColor = false;
             buttonIngresar.Click += buttonIngresar_Click;
+           
             // 
             // buttonCancelar
             // 
             buttonCancelar.BackColor = Color.Black;
-            buttonCancelar.FlatAppearance.BorderColor = Color.MediumVioletRed;
+            buttonCancelar.FlatAppearance.BorderColor = Color.White;
+            buttonCancelar.FlatAppearance.BorderSize = 2;
+            buttonCancelar.FlatStyle = FlatStyle.Flat;
             buttonCancelar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
             buttonCancelar.Location = new Point(12, 198);
@@ -125,6 +130,8 @@ namespace Vista
             // 
             buttonSalir.BackColor = Color.Black;
             buttonSalir.FlatAppearance.BorderColor = Color.White;
+            buttonSalir.FlatAppearance.BorderSize = 2;
+            buttonSalir.FlatStyle = FlatStyle.Flat;
             buttonSalir.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Location = new Point(21, 289);
