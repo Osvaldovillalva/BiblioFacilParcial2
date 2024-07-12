@@ -41,9 +41,13 @@
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(767, 411);
+            buttonSalir.FlatAppearance.BorderSize = 0;
+            buttonSalir.FlatStyle = FlatStyle.Popup;
+            buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.ForeColor = SystemColors.ButtonFace;
+            buttonSalir.Location = new Point(576, 446);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(138, 64);
+            buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
@@ -54,11 +58,11 @@
             dgvDevoluciones.AllowUserToAddRows = false;
             dgvDevoluciones.AllowUserToDeleteRows = false;
             dgvDevoluciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDevoluciones.Location = new Point(22, 107);
+            dgvDevoluciones.Location = new Point(22, 71);
             dgvDevoluciones.Name = "dgvDevoluciones";
             dgvDevoluciones.ReadOnly = true;
             dgvDevoluciones.RowTemplate.Height = 25;
-            dgvDevoluciones.Size = new Size(883, 138);
+            dgvDevoluciones.Size = new Size(896, 138);
             dgvDevoluciones.TabIndex = 1;
             // 
             // label1
@@ -74,10 +78,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Black;
+            label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(22, 77);
+            label2.Location = new Point(22, 43);
             label2.Name = "label2";
-            label2.Size = new Size(78, 15);
+            label2.Size = new Size(118, 25);
             label2.TabIndex = 3;
             label2.Text = "Devoluciones";
             // 
@@ -86,20 +91,21 @@
             dgvMultas.AllowUserToAddRows = false;
             dgvMultas.AllowUserToDeleteRows = false;
             dgvMultas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMultas.Location = new Point(22, 276);
+            dgvMultas.Location = new Point(22, 240);
             dgvMultas.Name = "dgvMultas";
             dgvMultas.ReadOnly = true;
             dgvMultas.RowTemplate.Height = 25;
-            dgvMultas.Size = new Size(883, 108);
+            dgvMultas.Size = new Size(896, 187);
             dgvMultas.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(22, 248);
+            label3.Location = new Point(22, 212);
             label3.Name = "label3";
-            label3.Size = new Size(43, 15);
+            label3.Size = new Size(65, 25);
             label3.TabIndex = 5;
             label3.Text = "Multas";
             // 
@@ -109,7 +115,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(930, 50);
+            panel1.Size = new Size(930, 40);
             panel1.TabIndex = 6;
             // 
             // FormRegistros
