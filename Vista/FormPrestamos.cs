@@ -68,7 +68,7 @@ namespace Vista
         private void CargarDatosDataGridView()
         {
             // Obtén todos los préstamos de la base de datos utilizando la controladora
-          
+
 
             // Carga los socios desde la controladora
             var socios = controladoraSocios.ObtenerTodosLosSocios();
@@ -356,12 +356,10 @@ namespace Vista
             }
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
 
-
-
-        
-        
-       
+        }
     }
 
 

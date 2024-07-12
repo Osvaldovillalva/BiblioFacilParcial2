@@ -181,11 +181,11 @@
             dgvLibros.AllowUserToAddRows = false;
             dgvLibros.AllowUserToDeleteRows = false;
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLibros.Location = new Point(261, 98);
+            dgvLibros.Location = new Point(255, 98);
             dgvLibros.Name = "dgvLibros";
             dgvLibros.ReadOnly = true;
             dgvLibros.RowTemplate.Height = 25;
-            dgvLibros.Size = new Size(669, 222);
+            dgvLibros.Size = new Size(663, 334);
             dgvLibros.TabIndex = 2;
             dgvLibros.CellContentClick += dgvLibros_CellContentClick;
             // 
@@ -204,7 +204,7 @@
             label4.BackColor = Color.Black;
             label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(255, 65);
+            label4.Location = new Point(255, 55);
             label4.Name = "label4";
             label4.Size = new Size(63, 25);
             label4.TabIndex = 4;

@@ -46,9 +46,13 @@
             // 
             // buttonGenerarPrestamo
             // 
-            buttonGenerarPrestamo.Location = new Point(589, 369);
+            buttonGenerarPrestamo.FlatAppearance.BorderSize = 0;
+            buttonGenerarPrestamo.FlatStyle = FlatStyle.Popup;
+            buttonGenerarPrestamo.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonGenerarPrestamo.ForeColor = SystemColors.ButtonFace;
+            buttonGenerarPrestamo.Location = new Point(575, 369);
             buttonGenerarPrestamo.Name = "buttonGenerarPrestamo";
-            buttonGenerarPrestamo.Size = new Size(137, 61);
+            buttonGenerarPrestamo.Size = new Size(170, 50);
             buttonGenerarPrestamo.TabIndex = 2;
             buttonGenerarPrestamo.Text = "Generar Prestamo";
             buttonGenerarPrestamo.UseVisualStyleBackColor = true;
@@ -67,17 +71,20 @@
             // textBoxDatosLibro
             // 
             textBoxDatosLibro.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDatosLibro.Location = new Point(12, 244);
+            textBoxDatosLibro.Location = new Point(14, 244);
             textBoxDatosLibro.Name = "textBoxDatosLibro";
-            textBoxDatosLibro.Size = new Size(559, 23);
+            textBoxDatosLibro.Size = new Size(550, 23);
             textBoxDatosLibro.TabIndex = 8;
             textBoxDatosLibro.TextChanged += textBoxDatosLibro_TextChanged;
             // 
             // buttonSalir
             // 
-            buttonSalir.Location = new Point(589, 436);
+            buttonSalir.FlatStyle = FlatStyle.Popup;
+            buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.ForeColor = SystemColors.ButtonFace;
+            buttonSalir.Location = new Point(575, 443);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(320, 52);
+            buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
@@ -86,19 +93,20 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(14, 74);
+            label1.Location = new Point(11, 53);
             label1.Name = "label1";
-            label1.Size = new Size(69, 15);
+            label1.Size = new Size(108, 25);
             label1.TabIndex = 3;
             label1.Text = "Datos Socio";
             // 
             // textBoxDatosSocio
             // 
             textBoxDatosSocio.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDatosSocio.Location = new Point(14, 103);
+            textBoxDatosSocio.Location = new Point(14, 81);
             textBoxDatosSocio.Name = "textBoxDatosSocio";
-            textBoxDatosSocio.Size = new Size(557, 23);
+            textBoxDatosSocio.Size = new Size(550, 23);
             textBoxDatosSocio.TabIndex = 4;
             textBoxDatosSocio.TextChanged += textBoxDatosSocio_TextChanged;
             // 
@@ -107,11 +115,11 @@
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(11, 141);
+            dgvSocios.Location = new Point(11, 110);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(560, 97);
+            dgvSocios.Size = new Size(553, 97);
             dgvSocios.TabIndex = 10;
             // 
             // dgvLibros
@@ -123,14 +131,18 @@
             dgvLibros.Name = "dgvLibros";
             dgvLibros.ReadOnly = true;
             dgvLibros.RowTemplate.Height = 25;
-            dgvLibros.Size = new Size(557, 215);
+            dgvLibros.Size = new Size(550, 215);
             dgvLibros.TabIndex = 11;
             // 
             // buttonLimpiartodo
             // 
-            buttonLimpiartodo.Location = new Point(779, 369);
+            buttonLimpiartodo.FlatAppearance.BorderSize = 0;
+            buttonLimpiartodo.FlatStyle = FlatStyle.Popup;
+            buttonLimpiartodo.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonLimpiartodo.ForeColor = SystemColors.ButtonFace;
+            buttonLimpiartodo.Location = new Point(755, 368);
             buttonLimpiartodo.Name = "buttonLimpiartodo";
-            buttonLimpiartodo.Size = new Size(130, 58);
+            buttonLimpiartodo.Size = new Size(170, 50);
             buttonLimpiartodo.TabIndex = 12;
             buttonLimpiartodo.Text = "Limpiar todo";
             buttonLimpiartodo.UseVisualStyleBackColor = true;
@@ -140,20 +152,22 @@
             // 
             listBoxCarrito.FormattingEnabled = true;
             listBoxCarrito.ItemHeight = 15;
-            listBoxCarrito.Location = new Point(589, 103);
+            listBoxCarrito.Location = new Point(575, 81);
             listBoxCarrito.Name = "listBoxCarrito";
-            listBoxCarrito.Size = new Size(320, 259);
+            listBoxCarrito.Size = new Size(343, 259);
             listBoxCarrito.TabIndex = 13;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(589, 74);
+            label3.Location = new Point(575, 43);
             label3.Name = "label3";
-            label3.Size = new Size(43, 15);
+            label3.Size = new Size(65, 25);
             label3.TabIndex = 14;
             label3.Text = "Carrito";
+            label3.Click += label3_Click;
             // 
             // panel1
             // 
@@ -161,7 +175,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(930, 50);
+            panel1.Size = new Size(930, 40);
             panel1.TabIndex = 15;
             // 
             // FormPrestamos
