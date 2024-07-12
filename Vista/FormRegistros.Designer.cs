@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistros));
             buttonSalir = new Button();
             dgvDevoluciones = new DataGridView();
             label1 = new Label();
@@ -45,11 +46,13 @@
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(576, 446);
+            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
+            buttonSalir.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSalir.Location = new Point(565, 442);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;
-            buttonSalir.Text = "Salir";
+            buttonSalir.Text = "Volver";
             buttonSalir.UseVisualStyleBackColor = true;
             buttonSalir.Click += buttonSalir_Click;
             // 

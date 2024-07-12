@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCuota));
             buttonSalir = new Button();
             label3 = new Label();
             comboBoxMes = new ComboBox();
@@ -48,11 +49,13 @@
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(577, 446);
+            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
+            buttonSalir.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSalir.Location = new Point(565, 441);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;
-            buttonSalir.Text = "Salir";
+            buttonSalir.Text = "Volver";
             buttonSalir.UseVisualStyleBackColor = true;
             buttonSalir.Click += buttonSalir_Click;
             // 
@@ -166,7 +169,7 @@
             dgvValorCuota.Name = "dgvValorCuota";
             dgvValorCuota.ReadOnly = true;
             dgvValorCuota.RowTemplate.Height = 25;
-            dgvValorCuota.Size = new Size(715, 394);
+            dgvValorCuota.Size = new Size(715, 380);
             dgvValorCuota.TabIndex = 2;
             // 
             // panel2

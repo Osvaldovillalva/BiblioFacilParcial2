@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLibros));
             buttonSalir = new Button();
             buttonLimpiar = new Button();
             textBoxCantidad = new TextBox();
@@ -52,11 +53,13 @@
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(575, 445);
+            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
+            buttonSalir.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSalir.Location = new Point(563, 442);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;
-            buttonSalir.Text = "Salir";
+            buttonSalir.Text = "Volver";
             buttonSalir.UseVisualStyleBackColor = true;
             buttonSalir.Click += buttonSalir_Click_1;
             // 

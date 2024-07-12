@@ -148,7 +148,7 @@
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
             buttonSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonSalir.Location = new Point(576, 446);
+            buttonSalir.Location = new Point(564, 442);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 1;
@@ -186,7 +186,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(481, 46);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(367, 394);
+            pictureBox1.Size = new Size(353, 377);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;

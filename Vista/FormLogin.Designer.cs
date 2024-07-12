@@ -139,7 +139,7 @@ namespace Vista
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
             buttonSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonSalir.Location = new Point(574, 445);
+            buttonSalir.Location = new Point(566, 441);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 6;
