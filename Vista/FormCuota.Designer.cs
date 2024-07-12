@@ -106,6 +106,8 @@
             buttonAgregar.FlatStyle = FlatStyle.Popup;
             buttonAgregar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonAgregar.ForeColor = SystemColors.ButtonFace;
+            buttonAgregar.Image = (Image)resources.GetObject("buttonAgregar.Image");
+            buttonAgregar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonAgregar.Location = new Point(12, 248);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(170, 50);
@@ -119,6 +121,8 @@
             buttonEliminar.FlatStyle = FlatStyle.Popup;
             buttonEliminar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonEliminar.ForeColor = SystemColors.ButtonFace;
+            buttonEliminar.Image = (Image)resources.GetObject("buttonEliminar.Image");
+            buttonEliminar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonEliminar.Location = new Point(12, 396);
             buttonEliminar.Name = "buttonEliminar";
             buttonEliminar.Size = new Size(170, 50);
@@ -132,6 +136,8 @@
             buttonModificar.FlatStyle = FlatStyle.Popup;
             buttonModificar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonModificar.ForeColor = SystemColors.ButtonFace;
+            buttonModificar.Image = (Image)resources.GetObject("buttonModificar.Image");
+            buttonModificar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonModificar.Location = new Point(12, 320);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(170, 50);

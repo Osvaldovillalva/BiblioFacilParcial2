@@ -62,7 +62,7 @@
             dgvPrestamos.Name = "dgvPrestamos";
             dgvPrestamos.ReadOnly = true;
             dgvPrestamos.RowTemplate.Height = 25;
-            dgvPrestamos.Size = new Size(895, 316);
+            dgvPrestamos.Size = new Size(895, 324);
             dgvPrestamos.TabIndex = 1;
             // 
             // textBoxBuscar
@@ -91,11 +91,13 @@
             buttonGenerarDevolucion.FlatStyle = FlatStyle.Popup;
             buttonGenerarDevolucion.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonGenerarDevolucion.ForeColor = SystemColors.ButtonFace;
-            buttonGenerarDevolucion.Location = new Point(23, 417);
+            buttonGenerarDevolucion.Image = (Image)resources.GetObject("buttonGenerarDevolucion.Image");
+            buttonGenerarDevolucion.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonGenerarDevolucion.Location = new Point(36, 438);
             buttonGenerarDevolucion.Name = "buttonGenerarDevolucion";
-            buttonGenerarDevolucion.Size = new Size(170, 71);
+            buttonGenerarDevolucion.Size = new Size(245, 50);
             buttonGenerarDevolucion.TabIndex = 4;
-            buttonGenerarDevolucion.Text = "Generar Devolucion";
+            buttonGenerarDevolucion.Text = "     Generar Devolucion";
             buttonGenerarDevolucion.UseVisualStyleBackColor = true;
             buttonGenerarDevolucion.Click += buttonGenerarDevolucion_Click;
             // 

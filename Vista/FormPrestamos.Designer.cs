@@ -51,9 +51,11 @@
             buttonGenerarPrestamo.FlatStyle = FlatStyle.Popup;
             buttonGenerarPrestamo.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonGenerarPrestamo.ForeColor = SystemColors.ButtonFace;
-            buttonGenerarPrestamo.Location = new Point(575, 369);
+            buttonGenerarPrestamo.Image = (Image)resources.GetObject("buttonGenerarPrestamo.Image");
+            buttonGenerarPrestamo.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonGenerarPrestamo.Location = new Point(614, 297);
             buttonGenerarPrestamo.Name = "buttonGenerarPrestamo";
-            buttonGenerarPrestamo.Size = new Size(170, 50);
+            buttonGenerarPrestamo.Size = new Size(251, 50);
             buttonGenerarPrestamo.TabIndex = 2;
             buttonGenerarPrestamo.Text = "Generar Prestamo";
             buttonGenerarPrestamo.UseVisualStyleBackColor = true;
@@ -143,9 +145,11 @@
             buttonLimpiartodo.FlatStyle = FlatStyle.Popup;
             buttonLimpiartodo.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonLimpiartodo.ForeColor = SystemColors.ButtonFace;
-            buttonLimpiartodo.Location = new Point(755, 368);
+            buttonLimpiartodo.Image = (Image)resources.GetObject("buttonLimpiartodo.Image");
+            buttonLimpiartodo.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonLimpiartodo.Location = new Point(614, 367);
             buttonLimpiartodo.Name = "buttonLimpiartodo";
-            buttonLimpiartodo.Size = new Size(170, 50);
+            buttonLimpiartodo.Size = new Size(251, 50);
             buttonLimpiartodo.TabIndex = 12;
             buttonLimpiartodo.Text = "Limpiar todo";
             buttonLimpiartodo.UseVisualStyleBackColor = true;
@@ -157,7 +161,7 @@
             listBoxCarrito.ItemHeight = 15;
             listBoxCarrito.Location = new Point(575, 81);
             listBoxCarrito.Name = "listBoxCarrito";
-            listBoxCarrito.Size = new Size(343, 259);
+            listBoxCarrito.Size = new Size(343, 199);
             listBoxCarrito.TabIndex = 13;
             // 
             // label3

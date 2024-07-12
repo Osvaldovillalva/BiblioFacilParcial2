@@ -113,6 +113,8 @@
             buttonModificar.FlatStyle = FlatStyle.Popup;
             buttonModificar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonModificar.ForeColor = SystemColors.ButtonFace;
+            buttonModificar.Image = (Image)resources.GetObject("buttonModificar.Image");
+            buttonModificar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonModificar.Location = new Point(313, 440);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(170, 50);

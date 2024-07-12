@@ -115,9 +115,11 @@
             buttonGenerarPago.FlatStyle = FlatStyle.Popup;
             buttonGenerarPago.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonGenerarPago.ForeColor = SystemColors.ButtonFace;
+            buttonGenerarPago.Image = (Image)resources.GetObject("buttonGenerarPago.Image");
+            buttonGenerarPago.ImageAlign = ContentAlignment.MiddleLeft;
             buttonGenerarPago.Location = new Point(577, 368);
             buttonGenerarPago.Name = "buttonGenerarPago";
-            buttonGenerarPago.Size = new Size(170, 50);
+            buttonGenerarPago.Size = new Size(254, 62);
             buttonGenerarPago.TabIndex = 6;
             buttonGenerarPago.Text = "Generar Pago";
             buttonGenerarPago.UseVisualStyleBackColor = true;
