@@ -139,7 +139,7 @@ namespace Vista
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
             buttonSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonSalir.Location = new Point(21, 289);
+            buttonSalir.Location = new Point(568, 442);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 6;
@@ -161,7 +161,7 @@ namespace Vista
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(397, 56);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(521, 445);
+            pictureBox1.Size = new Size(444, 380);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;

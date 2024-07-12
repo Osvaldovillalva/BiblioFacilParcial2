@@ -52,7 +52,7 @@
             buttonAgregar.FlatStyle = FlatStyle.Popup;
             buttonAgregar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonAgregar.ForeColor = SystemColors.ButtonFace;
-            buttonAgregar.Location = new Point(213, 56);
+            buttonAgregar.Location = new Point(12, 285);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(170, 50);
             buttonAgregar.TabIndex = 4;
@@ -66,7 +66,7 @@
             BtnModificar.FlatStyle = FlatStyle.Popup;
             BtnModificar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             BtnModificar.ForeColor = SystemColors.ButtonFace;
-            BtnModificar.Location = new Point(214, 210);
+            BtnModificar.Location = new Point(15, 365);
             BtnModificar.Name = "BtnModificar";
             BtnModificar.Size = new Size(170, 50);
             BtnModificar.TabIndex = 3;
@@ -80,7 +80,7 @@
             buttonBorrar.FlatStyle = FlatStyle.Popup;
             buttonBorrar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonBorrar.ForeColor = SystemColors.ButtonFace;
-            buttonBorrar.Location = new Point(214, 121);
+            buttonBorrar.Location = new Point(15, 438);
             buttonBorrar.Name = "buttonBorrar";
             buttonBorrar.Size = new Size(170, 50);
             buttonBorrar.TabIndex = 2;
@@ -93,19 +93,19 @@
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(405, 100);
+            dgvSocios.Location = new Point(238, 97);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(513, 333);
+            dgvSocios.Size = new Size(680, 336);
             dgvSocios.TabIndex = 2;
             // 
             // textBoxBuscar
             // 
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
-            textBoxBuscar.Location = new Point(474, 62);
+            textBoxBuscar.Location = new Point(317, 47);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.Size = new Size(444, 23);
+            textBoxBuscar.Size = new Size(601, 23);
             textBoxBuscar.TabIndex = 3;
             textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;
             // 
@@ -114,7 +114,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(405, 62);
+            label4.Location = new Point(238, 43);
             label4.Name = "label4";
             label4.Size = new Size(63, 25);
             label4.TabIndex = 4;
@@ -126,7 +126,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(930, 50);
+            panel2.Size = new Size(930, 40);
             panel2.TabIndex = 5;
             // 
             // buttonSalir
@@ -135,7 +135,7 @@
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(12, 438);
+            buttonSalir.Location = new Point(568, 438);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 1;
@@ -149,7 +149,7 @@
             buttonLimpiar.FlatStyle = FlatStyle.Popup;
             buttonLimpiar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonLimpiar.ForeColor = SystemColors.ButtonFace;
-            buttonLimpiar.Location = new Point(15, 285);
+            buttonLimpiar.Location = new Point(15, 217);
             buttonLimpiar.Name = "buttonLimpiar";
             buttonLimpiar.Size = new Size(170, 50);
             buttonLimpiar.TabIndex = 5;
@@ -160,7 +160,7 @@
             // textBoxNombre
             // 
             textBoxNombre.BorderStyle = BorderStyle.FixedSingle;
-            textBoxNombre.Location = new Point(12, 86);
+            textBoxNombre.Location = new Point(12, 71);
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(195, 23);
             textBoxNombre.TabIndex = 6;
@@ -169,7 +169,7 @@
             // textBoxApellido
             // 
             textBoxApellido.BorderStyle = BorderStyle.FixedSingle;
-            textBoxApellido.Location = new Point(15, 158);
+            textBoxApellido.Location = new Point(15, 125);
             textBoxApellido.Name = "textBoxApellido";
             textBoxApellido.Size = new Size(192, 23);
             textBoxApellido.TabIndex = 7;
@@ -178,7 +178,7 @@
             // textBoxDni
             // 
             textBoxDni.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDni.Location = new Point(15, 237);
+            textBoxDni.Location = new Point(15, 188);
             textBoxDni.Name = "textBoxDni";
             textBoxDni.Size = new Size(192, 23);
             textBoxDni.TabIndex = 8;
@@ -189,7 +189,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 58);
+            label1.Location = new Point(12, 43);
             label1.Name = "label1";
             label1.Size = new Size(78, 25);
             label1.TabIndex = 9;
@@ -200,7 +200,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 121);
+            label2.Location = new Point(12, 97);
             label2.Name = "label2";
             label2.Size = new Size(78, 25);
             label2.TabIndex = 10;
@@ -211,7 +211,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(15, 199);
+            label3.Location = new Point(15, 160);
             label3.Name = "label3";
             label3.Size = new Size(51, 25);
             label3.TabIndex = 11;

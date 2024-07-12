@@ -51,7 +51,7 @@
             buttonSocios.ForeColor = SystemColors.ButtonFace;
             buttonSocios.Location = new Point(0, 56);
             buttonSocios.Name = "buttonSocios";
-            buttonSocios.Size = new Size(203, 71);
+            buttonSocios.Size = new Size(170, 50);
             buttonSocios.TabIndex = 1;
             buttonSocios.Text = "Socios";
             buttonSocios.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             buttonLibros.ForeColor = SystemColors.ButtonFace;
             buttonLibros.Location = new Point(0, 133);
             buttonLibros.Name = "buttonLibros";
-            buttonLibros.Size = new Size(203, 71);
+            buttonLibros.Size = new Size(170, 50);
             buttonLibros.TabIndex = 0;
             buttonLibros.Text = "Libros";
             buttonLibros.UseVisualStyleBackColor = true;
@@ -78,11 +78,11 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(18, 321);
+            button1.Location = new Point(12, 323);
             button1.Name = "button1";
-            button1.Size = new Size(197, 92);
+            button1.Size = new Size(170, 59);
             button1.TabIndex = 2;
-            button1.Text = "Consulta Prestamos \r\n\r\n Generar Devoluciones";
+            button1.Text = "Generar\r\n Devoluciones";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -95,7 +95,7 @@
             buttonPrestamos.ForeColor = SystemColors.ButtonFace;
             buttonPrestamos.Location = new Point(12, 225);
             buttonPrestamos.Name = "buttonPrestamos";
-            buttonPrestamos.Size = new Size(203, 71);
+            buttonPrestamos.Size = new Size(170, 50);
             buttonPrestamos.TabIndex = 2;
             buttonPrestamos.Text = "Generar Prestamos ";
             buttonPrestamos.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
             buttonSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonSalir.Location = new Point(12, 438);
+            buttonSalir.Location = new Point(568, 449);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 1;
@@ -172,7 +172,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(512, 67);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(406, 408);
+            pictureBox1.Size = new Size(334, 346);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
