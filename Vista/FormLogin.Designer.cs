@@ -105,7 +105,7 @@ namespace Vista
             buttonIngresar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonIngresar.Location = new Point(199, 198);
             buttonIngresar.Name = "buttonIngresar";
-            buttonIngresar.Size = new Size(172, 55);
+            buttonIngresar.Size = new Size(170, 50);
             buttonIngresar.TabIndex = 4;
             buttonIngresar.Text = "   Ingresar";
             buttonIngresar.UseVisualStyleBackColor = false;
@@ -123,7 +123,7 @@ namespace Vista
             buttonCancelar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonCancelar.Location = new Point(12, 198);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(172, 55);
+            buttonCancelar.Size = new Size(170, 50);
             buttonCancelar.TabIndex = 5;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
