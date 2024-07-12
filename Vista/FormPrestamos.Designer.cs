@@ -82,7 +82,7 @@
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(575, 443);
+            buttonSalir.Location = new Point(576, 445);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;

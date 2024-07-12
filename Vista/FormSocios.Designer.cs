@@ -93,11 +93,11 @@
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(238, 97);
+            dgvSocios.Location = new Point(224, 76);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(680, 336);
+            dgvSocios.Size = new Size(694, 357);
             dgvSocios.TabIndex = 2;
             // 
             // textBoxBuscar
@@ -135,7 +135,7 @@
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
-            buttonSalir.Location = new Point(568, 438);
+            buttonSalir.Location = new Point(573, 446);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 1;
