@@ -98,7 +98,7 @@ namespace Vista
             buttonIngresar.BackColor = Color.Black;
             buttonIngresar.FlatAppearance.BorderColor = Color.White;
             buttonIngresar.FlatAppearance.BorderSize = 0;
-            buttonIngresar.FlatStyle = FlatStyle.Flat;
+            buttonIngresar.FlatStyle = FlatStyle.Popup;
             buttonIngresar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonIngresar.ForeColor = Color.White;
             buttonIngresar.Image = (Image)resources.GetObject("buttonIngresar.Image");
@@ -116,7 +116,7 @@ namespace Vista
             buttonCancelar.BackColor = Color.Black;
             buttonCancelar.FlatAppearance.BorderColor = Color.White;
             buttonCancelar.FlatAppearance.BorderSize = 0;
-            buttonCancelar.FlatStyle = FlatStyle.Flat;
+            buttonCancelar.FlatStyle = FlatStyle.Popup;
             buttonCancelar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonFace;
             buttonCancelar.Image = (Image)resources.GetObject("buttonCancelar.Image");
@@ -134,7 +134,7 @@ namespace Vista
             buttonSalir.BackColor = Color.Black;
             buttonSalir.FlatAppearance.BorderColor = Color.White;
             buttonSalir.FlatAppearance.BorderSize = 0;
-            buttonSalir.FlatStyle = FlatStyle.Flat;
+            buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
