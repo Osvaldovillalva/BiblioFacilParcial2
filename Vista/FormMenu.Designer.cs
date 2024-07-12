@@ -164,7 +164,7 @@
             panel3.ForeColor = Color.MediumVioletRed;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(930, 50);
+            panel3.Size = new Size(930, 40);
             panel3.TabIndex = 3;
             // 
             // pictureBox1

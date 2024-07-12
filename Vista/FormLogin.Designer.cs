@@ -153,13 +153,13 @@ namespace Vista
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(930, 50);
+            panel1.Size = new Size(930, 40);
             panel1.TabIndex = 7;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(397, 56);
+            pictureBox1.Location = new Point(452, 56);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(444, 380);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             buttonSalir = new Button();
-            panel1 = new Panel();
             buttonLimpiar = new Button();
             textBoxCantidad = new TextBox();
             label3 = new Label();
@@ -44,47 +43,32 @@
             textBoxBuscar = new TextBox();
             label4 = new Label();
             panel2 = new Panel();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvLibros).BeginInit();
             SuspendLayout();
             // 
             // buttonSalir
             // 
-            buttonSalir.Dock = DockStyle.Bottom;
-            buttonSalir.Location = new Point(0, 392);
+            buttonSalir.FlatAppearance.BorderSize = 0;
+            buttonSalir.FlatStyle = FlatStyle.Popup;
+            buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.ForeColor = SystemColors.ButtonFace;
+            buttonSalir.Location = new Point(568, 438);
             buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(238, 47);
+            buttonSalir.Size = new Size(350, 50);
             buttonSalir.TabIndex = 0;
             buttonSalir.Text = "Salir";
             buttonSalir.UseVisualStyleBackColor = true;
             buttonSalir.Click += buttonSalir_Click_1;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Black;
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(buttonLimpiar);
-            panel1.Controls.Add(textBoxCantidad);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(textBoxAutor);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBoxTitulo);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(buttonAgregar);
-            panel1.Controls.Add(buttonModificar);
-            panel1.Controls.Add(buttonBorrar);
-            panel1.Controls.Add(buttonSalir);
-            panel1.Location = new Point(4, 47);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(240, 441);
-            panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
-            // 
             // buttonLimpiar
             // 
-            buttonLimpiar.Location = new Point(36, 154);
+            buttonLimpiar.FlatAppearance.BorderSize = 0;
+            buttonLimpiar.FlatStyle = FlatStyle.Popup;
+            buttonLimpiar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonLimpiar.ForeColor = SystemColors.ButtonFace;
+            buttonLimpiar.Location = new Point(12, 243);
             buttonLimpiar.Name = "buttonLimpiar";
-            buttonLimpiar.Size = new Size(166, 46);
+            buttonLimpiar.Size = new Size(170, 50);
             buttonLimpiar.TabIndex = 9;
             buttonLimpiar.Text = "Limpiar Todo";
             buttonLimpiar.UseVisualStyleBackColor = true;
@@ -93,7 +77,7 @@
             // textBoxCantidad
             // 
             textBoxCantidad.BorderStyle = BorderStyle.FixedSingle;
-            textBoxCantidad.Location = new Point(11, 125);
+            textBoxCantidad.Location = new Point(12, 202);
             textBoxCantidad.Name = "textBoxCantidad";
             textBoxCantidad.Size = new Size(216, 23);
             textBoxCantidad.TabIndex = 8;
@@ -102,17 +86,18 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(11, 107);
+            label3.Location = new Point(12, 161);
             label3.Name = "label3";
-            label3.Size = new Size(55, 15);
+            label3.Size = new Size(83, 25);
             label3.TabIndex = 7;
             label3.Text = "Cantidad";
             // 
             // textBoxAutor
             // 
             textBoxAutor.BorderStyle = BorderStyle.FixedSingle;
-            textBoxAutor.Location = new Point(11, 71);
+            textBoxAutor.Location = new Point(12, 126);
             textBoxAutor.Name = "textBoxAutor";
             textBoxAutor.Size = new Size(216, 23);
             textBoxAutor.TabIndex = 6;
@@ -121,17 +106,18 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(11, 53);
+            label2.Location = new Point(12, 98);
             label2.Name = "label2";
-            label2.Size = new Size(103, 15);
+            label2.Size = new Size(157, 25);
             label2.TabIndex = 5;
             label2.Text = "Apellido del Autor";
             // 
             // textBoxTitulo
             // 
             textBoxTitulo.BorderStyle = BorderStyle.FixedSingle;
-            textBoxTitulo.Location = new Point(11, 27);
+            textBoxTitulo.Location = new Point(12, 71);
             textBoxTitulo.Name = "textBoxTitulo";
             textBoxTitulo.Size = new Size(216, 23);
             textBoxTitulo.TabIndex = 4;
@@ -140,19 +126,23 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(11, 9);
+            label1.Location = new Point(12, 43);
             label1.Name = "label1";
-            label1.Size = new Size(37, 15);
+            label1.Size = new Size(56, 25);
             label1.TabIndex = 3;
             label1.Text = "Titulo";
             // 
             // buttonAgregar
             // 
-            buttonAgregar.Dock = DockStyle.Bottom;
-            buttonAgregar.Location = new Point(0, 206);
+            buttonAgregar.FlatAppearance.BorderSize = 0;
+            buttonAgregar.FlatStyle = FlatStyle.Popup;
+            buttonAgregar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAgregar.ForeColor = SystemColors.ButtonFace;
+            buttonAgregar.Location = new Point(12, 313);
             buttonAgregar.Name = "buttonAgregar";
-            buttonAgregar.Size = new Size(238, 69);
+            buttonAgregar.Size = new Size(170, 50);
             buttonAgregar.TabIndex = 2;
             buttonAgregar.Text = "Agregar";
             buttonAgregar.UseVisualStyleBackColor = true;
@@ -160,10 +150,13 @@
             // 
             // buttonModificar
             // 
-            buttonModificar.Dock = DockStyle.Bottom;
-            buttonModificar.Location = new Point(0, 275);
+            buttonModificar.FlatAppearance.BorderSize = 0;
+            buttonModificar.FlatStyle = FlatStyle.Popup;
+            buttonModificar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonModificar.ForeColor = SystemColors.ButtonFace;
+            buttonModificar.Location = new Point(12, 369);
             buttonModificar.Name = "buttonModificar";
-            buttonModificar.Size = new Size(238, 60);
+            buttonModificar.Size = new Size(170, 50);
             buttonModificar.TabIndex = 1;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
@@ -171,10 +164,13 @@
             // 
             // buttonBorrar
             // 
-            buttonBorrar.Dock = DockStyle.Bottom;
-            buttonBorrar.Location = new Point(0, 335);
+            buttonBorrar.FlatAppearance.BorderSize = 0;
+            buttonBorrar.FlatStyle = FlatStyle.Popup;
+            buttonBorrar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonBorrar.ForeColor = SystemColors.ButtonFace;
+            buttonBorrar.Location = new Point(12, 438);
             buttonBorrar.Name = "buttonBorrar";
-            buttonBorrar.Size = new Size(238, 57);
+            buttonBorrar.Size = new Size(170, 50);
             buttonBorrar.TabIndex = 0;
             buttonBorrar.Text = "Borrar";
             buttonBorrar.UseVisualStyleBackColor = true;
@@ -185,20 +181,20 @@
             dgvLibros.AllowUserToAddRows = false;
             dgvLibros.AllowUserToDeleteRows = false;
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLibros.Location = new Point(249, 101);
+            dgvLibros.Location = new Point(261, 98);
             dgvLibros.Name = "dgvLibros";
             dgvLibros.ReadOnly = true;
             dgvLibros.RowTemplate.Height = 25;
-            dgvLibros.Size = new Size(669, 387);
+            dgvLibros.Size = new Size(669, 222);
             dgvLibros.TabIndex = 2;
             dgvLibros.CellContentClick += dgvLibros_CellContentClick;
             // 
             // textBoxBuscar
             // 
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
-            textBoxBuscar.Location = new Point(303, 57);
+            textBoxBuscar.Location = new Point(324, 57);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.Size = new Size(615, 23);
+            textBoxBuscar.Size = new Size(594, 23);
             textBoxBuscar.TabIndex = 3;
             textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;
             // 
@@ -206,10 +202,11 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Black;
+            label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
             label4.Location = new Point(255, 65);
             label4.Name = "label4";
-            label4.Size = new Size(42, 15);
+            label4.Size = new Size(63, 25);
             label4.TabIndex = 4;
             label4.Text = "Buscar";
             // 
@@ -219,7 +216,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(930, 50);
+            panel2.Size = new Size(930, 40);
             panel2.TabIndex = 5;
             panel2.Paint += panel2_Paint;
             // 
@@ -229,17 +226,25 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(label1);
+            Controls.Add(textBoxTitulo);
+            Controls.Add(textBoxAutor);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(textBoxCantidad);
+            Controls.Add(buttonLimpiar);
             Controls.Add(panel2);
             Controls.Add(label4);
             Controls.Add(textBoxBuscar);
             Controls.Add(dgvLibros);
-            Controls.Add(panel1);
+            Controls.Add(buttonBorrar);
+            Controls.Add(buttonModificar);
+            Controls.Add(buttonAgregar);
+            Controls.Add(buttonSalir);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormLibros";
             Text = "FormLibros";
             Load += FormLibros_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvLibros).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -248,7 +253,6 @@
         #endregion
 
         private Button buttonSalir;
-        private Panel panel1;
         private DataGridView dgvLibros;
         private Button buttonBorrar;
         private Label label3;
