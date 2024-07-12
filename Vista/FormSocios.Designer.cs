@@ -48,7 +48,10 @@
             // 
             // buttonAgregar
             // 
+            buttonAgregar.FlatAppearance.BorderSize = 0;
+            buttonAgregar.FlatStyle = FlatStyle.Popup;
             buttonAgregar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAgregar.ForeColor = SystemColors.ButtonFace;
             buttonAgregar.Location = new Point(213, 56);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(170, 50);
@@ -59,7 +62,10 @@
             // 
             // BtnModificar
             // 
+            BtnModificar.FlatAppearance.BorderSize = 0;
+            BtnModificar.FlatStyle = FlatStyle.Popup;
             BtnModificar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            BtnModificar.ForeColor = SystemColors.ButtonFace;
             BtnModificar.Location = new Point(214, 210);
             BtnModificar.Name = "BtnModificar";
             BtnModificar.Size = new Size(170, 50);
@@ -70,7 +76,10 @@
             // 
             // buttonBorrar
             // 
+            buttonBorrar.FlatAppearance.BorderSize = 0;
+            buttonBorrar.FlatStyle = FlatStyle.Popup;
             buttonBorrar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonBorrar.ForeColor = SystemColors.ButtonFace;
             buttonBorrar.Location = new Point(214, 121);
             buttonBorrar.Name = "buttonBorrar";
             buttonBorrar.Size = new Size(170, 50);
@@ -122,7 +131,10 @@
             // 
             // buttonSalir
             // 
+            buttonSalir.FlatAppearance.BorderSize = 0;
+            buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalir.ForeColor = SystemColors.ButtonFace;
             buttonSalir.Location = new Point(12, 438);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(350, 50);
@@ -133,7 +145,10 @@
             // 
             // buttonLimpiar
             // 
+            buttonLimpiar.FlatAppearance.BorderSize = 0;
+            buttonLimpiar.FlatStyle = FlatStyle.Popup;
             buttonLimpiar.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonLimpiar.ForeColor = SystemColors.ButtonFace;
             buttonLimpiar.Location = new Point(15, 285);
             buttonLimpiar.Name = "buttonLimpiar";
             buttonLimpiar.Size = new Size(170, 50);
