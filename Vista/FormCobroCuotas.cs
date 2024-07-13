@@ -245,7 +245,8 @@ namespace Vista
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            listBoxCarritoCuotas.Items.Clear();
         }
+
     }
 }
