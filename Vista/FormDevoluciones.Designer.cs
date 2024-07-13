@@ -57,6 +57,7 @@
             // 
             dgvPrestamos.AllowUserToAddRows = false;
             dgvPrestamos.AllowUserToDeleteRows = false;
+            dgvPrestamos.BackgroundColor = Color.Black;
             dgvPrestamos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPrestamos.Location = new Point(23, 95);
             dgvPrestamos.Name = "dgvPrestamos";

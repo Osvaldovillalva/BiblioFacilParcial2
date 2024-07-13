@@ -37,6 +37,7 @@
             listBoxCarritoCuotas = new ListBox();
             buttonGenerarPago = new Button();
             panel1 = new Panel();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvSocios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCuotasMensuales).BeginInit();
             SuspendLayout();
@@ -80,33 +81,36 @@
             // 
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
+            dgvSocios.BackgroundColor = Color.Black;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSocios.Location = new Point(12, 100);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(906, 110);
+            dgvSocios.Size = new Size(906, 109);
             dgvSocios.TabIndex = 3;
             // 
             // dgvCuotasMensuales
             // 
             dgvCuotasMensuales.AllowUserToAddRows = false;
             dgvCuotasMensuales.AllowUserToDeleteRows = false;
+            dgvCuotasMensuales.BackgroundColor = Color.Black;
             dgvCuotasMensuales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCuotasMensuales.Location = new Point(12, 228);
+            dgvCuotasMensuales.Location = new Point(12, 240);
             dgvCuotasMensuales.Name = "dgvCuotasMensuales";
             dgvCuotasMensuales.ReadOnly = true;
             dgvCuotasMensuales.RowTemplate.Height = 25;
-            dgvCuotasMensuales.Size = new Size(906, 127);
+            dgvCuotasMensuales.Size = new Size(579, 180);
             dgvCuotasMensuales.TabIndex = 4;
+            dgvCuotasMensuales.CellContentClick += dgvCuotasMensuales_CellContentClick;
             // 
             // listBoxCarritoCuotas
             // 
             listBoxCarritoCuotas.FormattingEnabled = true;
             listBoxCarritoCuotas.ItemHeight = 15;
-            listBoxCarritoCuotas.Location = new Point(12, 379);
+            listBoxCarritoCuotas.Location = new Point(612, 237);
             listBoxCarritoCuotas.Name = "listBoxCarritoCuotas";
-            listBoxCarritoCuotas.Size = new Size(547, 109);
+            listBoxCarritoCuotas.Size = new Size(296, 184);
             listBoxCarritoCuotas.TabIndex = 5;
             // 
             // buttonGenerarPago
@@ -117,7 +121,7 @@
             buttonGenerarPago.ForeColor = SystemColors.ButtonFace;
             buttonGenerarPago.Image = (Image)resources.GetObject("buttonGenerarPago.Image");
             buttonGenerarPago.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonGenerarPago.Location = new Point(577, 368);
+            buttonGenerarPago.Location = new Point(22, 426);
             buttonGenerarPago.Name = "buttonGenerarPago";
             buttonGenerarPago.Size = new Size(254, 62);
             buttonGenerarPago.TabIndex = 6;
@@ -134,12 +138,24 @@
             panel1.Size = new Size(930, 40);
             panel1.TabIndex = 7;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(12, 212);
+            label2.Name = "label2";
+            label2.Size = new Size(169, 25);
+            label2.TabIndex = 8;
+            label2.Text = "Cuotas que Adeuda";
+            // 
             // FormCobroCuotas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(buttonGenerarPago);
             Controls.Add(listBoxCarritoCuotas);
@@ -168,5 +184,6 @@
         private ListBox listBoxCarritoCuotas;
         private Button buttonGenerarPago;
         private Panel panel1;
+        private Label label2;
     }
 }

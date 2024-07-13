@@ -99,6 +99,7 @@
             // 
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
+            dgvSocios.BackgroundColor = Color.Black;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSocios.Location = new Point(224, 76);
             dgvSocios.Name = "dgvSocios";

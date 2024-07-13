@@ -120,6 +120,7 @@
             // 
             dgvSocios.AllowUserToAddRows = false;
             dgvSocios.AllowUserToDeleteRows = false;
+            dgvSocios.BackgroundColor = Color.Black;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSocios.Location = new Point(11, 110);
             dgvSocios.Name = "dgvSocios";
@@ -132,6 +133,7 @@
             // 
             dgvLibros.AllowUserToAddRows = false;
             dgvLibros.AllowUserToDeleteRows = false;
+            dgvLibros.BackgroundColor = Color.Black;
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLibros.Location = new Point(14, 273);
             dgvLibros.Name = "dgvLibros";

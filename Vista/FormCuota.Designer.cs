@@ -170,6 +170,7 @@
             // 
             dgvValorCuota.AllowUserToAddRows = false;
             dgvValorCuota.AllowUserToDeleteRows = false;
+            dgvValorCuota.BackgroundColor = Color.Black;
             dgvValorCuota.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvValorCuota.Location = new Point(203, 46);
             dgvValorCuota.Name = "dgvValorCuota";

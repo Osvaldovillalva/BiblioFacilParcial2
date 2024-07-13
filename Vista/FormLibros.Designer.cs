@@ -191,6 +191,7 @@
             // 
             dgvLibros.AllowUserToAddRows = false;
             dgvLibros.AllowUserToDeleteRows = false;
+            dgvLibros.BackgroundColor = Color.Black;
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLibros.Location = new Point(255, 98);
             dgvLibros.Name = "dgvLibros";

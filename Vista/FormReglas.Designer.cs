@@ -183,6 +183,7 @@
             // 
             dgvReglas.AllowUserToAddRows = false;
             dgvReglas.AllowUserToDeleteRows = false;
+            dgvReglas.BackgroundColor = Color.Black;
             dgvReglas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvReglas.Location = new Point(21, 86);
             dgvReglas.Name = "dgvReglas";

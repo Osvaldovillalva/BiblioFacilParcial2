@@ -81,9 +81,16 @@ namespace Vista
             var socios = controladoraSocios.ObtenerTodosLosSocios();
             dgvSocios.DataSource = socios;
 
+            // Ocultar la columna SocioId
+            dgvSocios.Columns["SocioId"].Visible = false;
+
             var cuotas = controladoraCuotas.ObtenerTodasLasCuotas();
             dgvCuotasMensuales.DataSource = cuotas;
+
+            // Ocultar la columna CuotaMensualId
+            dgvCuotasMensuales.Columns["CuotaMensualId"].Visible = false;
         }
+
 
         private void dgvSocios_SelectionChanged(object sender, EventArgs e)
         {
@@ -197,7 +204,7 @@ namespace Vista
             }
 
             StringBuilder sb = new StringBuilder();
-           
+
             sb.AppendLine($"ID del Socio: {carrito.SocioId}");
             sb.AppendLine($"Socio: {carrito.SocioSeleccionado.Nombre} {carrito.SocioSeleccionado.Apellido} (DNI: {carrito.SocioSeleccionado.Dni})");
 
@@ -231,6 +238,9 @@ namespace Vista
             return true;
         }
 
+        private void dgvCuotasMensuales_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

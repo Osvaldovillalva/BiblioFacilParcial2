@@ -60,6 +60,7 @@
             // 
             dgvDevoluciones.AllowUserToAddRows = false;
             dgvDevoluciones.AllowUserToDeleteRows = false;
+            dgvDevoluciones.BackgroundColor = Color.Black;
             dgvDevoluciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDevoluciones.Location = new Point(22, 71);
             dgvDevoluciones.Name = "dgvDevoluciones";
@@ -93,6 +94,7 @@
             // 
             dgvMultas.AllowUserToAddRows = false;
             dgvMultas.AllowUserToDeleteRows = false;
+            dgvMultas.BackgroundColor = Color.Black;
             dgvMultas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvMultas.Location = new Point(22, 240);
             dgvMultas.Name = "dgvMultas";
