@@ -38,6 +38,7 @@
             buttonGenerarPago = new Button();
             panel1 = new Panel();
             label2 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvSocios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCuotasMensuales).BeginInit();
             SuspendLayout();
@@ -110,7 +111,7 @@
             listBoxCarritoCuotas.ItemHeight = 15;
             listBoxCarritoCuotas.Location = new Point(612, 237);
             listBoxCarritoCuotas.Name = "listBoxCarritoCuotas";
-            listBoxCarritoCuotas.Size = new Size(296, 184);
+            listBoxCarritoCuotas.Size = new Size(296, 169);
             listBoxCarritoCuotas.TabIndex = 5;
             // 
             // buttonGenerarPago
@@ -121,7 +122,7 @@
             buttonGenerarPago.ForeColor = SystemColors.ButtonFace;
             buttonGenerarPago.Image = (Image)resources.GetObject("buttonGenerarPago.Image");
             buttonGenerarPago.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonGenerarPago.Location = new Point(22, 426);
+            buttonGenerarPago.Location = new Point(285, 426);
             buttonGenerarPago.Name = "buttonGenerarPago";
             buttonGenerarPago.Size = new Size(254, 62);
             buttonGenerarPago.TabIndex = 6;
@@ -149,12 +150,29 @@
             label2.TabIndex = 8;
             label2.Text = "Cuotas que Adeuda";
             // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ButtonFace;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(22, 426);
+            button1.Name = "button1";
+            button1.Size = new Size(204, 62);
+            button1.TabIndex = 9;
+            button1.Text = "Limpiar todo";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // FormCobroCuotas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(buttonGenerarPago);
@@ -185,5 +203,6 @@
         private Button buttonGenerarPago;
         private Panel panel1;
         private Label label2;
+        private Button button1;
     }
 }
