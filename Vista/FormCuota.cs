@@ -65,12 +65,17 @@ namespace Vista
 
                 // Configurar el origen de datos del DataGridView
                 dgvValorCuota.DataSource = cuotas;
+
+                // Ocultar la columna CuotaMensualId
+                dgvValorCuota.Columns["CuotaMensualId"].Visible = false;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
 
 
         private void dgvValorCuota_SelectionChanged(object sender, EventArgs e)
@@ -259,6 +264,9 @@ namespace Vista
             }
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
