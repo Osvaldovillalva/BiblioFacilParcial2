@@ -13,7 +13,7 @@ namespace Vista
         private ControladoraPrestamos controladoraPrestamos;
 
         private ControladoraLibros controladoraLibros;
-        private ControladoraReglas controladoraReglas;  
+        private ControladoraReglas controladoraReglas;
         private ControladoraSocios controladoraSocios;
         private ControladoraMultas controladoraMultas;
 
@@ -71,16 +71,26 @@ namespace Vista
 
         public void CargarDatosDataGridView()
         {
-            // Obtener los datos de la tabla Prestamos
-            List<Prestamo> prestamos = controladoraPrestamos.ObtenerTodosLosPrestamos();
+            try
+            {
+                // Obtener los datos de la tabla Prestamos
+                List<Prestamo> prestamos = controladoraPrestamos.ObtenerTodosLosPrestamos();
 
-            // Asignar el DataSource del DataGridView al listado de préstamos
-            dgvPrestamos.DataSource = prestamos;
+                // Asignar el DataSource del DataGridView al listado de préstamos
+                dgvPrestamos.DataSource = prestamos;
 
-            // Ocultar las columnas de IdSocio y IdLibro
-            dgvPrestamos.Columns["Libro"].Visible = false;
-            dgvPrestamos.Columns["Socio"].Visible = false;
+                // Ocultar las columnas que deseas ocultar
+                dgvPrestamos.Columns["LibroId"].Visible = false;
+                dgvPrestamos.Columns["SocioId"].Visible = false;
+                dgvPrestamos.Columns["PrestamoId"].Visible = false;
+                dgvPrestamos.Columns["CarritoId"].Visible = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
@@ -174,9 +184,10 @@ namespace Vista
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
-
-
+        }
     }
 
 }
