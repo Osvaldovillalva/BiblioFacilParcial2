@@ -43,6 +43,7 @@
             textBoxDiasPrestamo = new TextBox();
             dgvReglas = new DataGridView();
             panel2 = new Panel();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvReglas).BeginInit();
             SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(12, 290);
+            label5.Location = new Point(315, 170);
             label5.Name = "label5";
             label5.Size = new Size(188, 50);
             label5.TabIndex = 10;
@@ -60,7 +61,7 @@
             // textBoxPorcentajerecargo
             // 
             textBoxPorcentajerecargo.BorderStyle = BorderStyle.FixedSingle;
-            textBoxPorcentajerecargo.Location = new Point(12, 355);
+            textBoxPorcentajerecargo.Location = new Point(315, 228);
             textBoxPorcentajerecargo.Name = "textBoxPorcentajerecargo";
             textBoxPorcentajerecargo.Size = new Size(218, 23);
             textBoxPorcentajerecargo.TabIndex = 9;
@@ -69,7 +70,7 @@
             // textBoxDiasvenceCuota
             // 
             textBoxDiasvenceCuota.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDiasvenceCuota.Location = new Point(12, 458);
+            textBoxDiasvenceCuota.Location = new Point(315, 325);
             textBoxDiasvenceCuota.Name = "textBoxDiasvenceCuota";
             textBoxDiasvenceCuota.Size = new Size(218, 23);
             textBoxDiasvenceCuota.TabIndex = 8;
@@ -80,7 +81,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(12, 391);
+            label4.Location = new Point(315, 267);
             label4.Name = "label4";
             label4.Size = new Size(158, 50);
             label4.TabIndex = 7;
@@ -89,7 +90,7 @@
             // textBoxDiasMulta
             // 
             textBoxDiasMulta.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDiasMulta.Location = new Point(15, 162);
+            textBoxDiasMulta.Location = new Point(29, 325);
             textBoxDiasMulta.Name = "textBoxDiasMulta";
             textBoxDiasMulta.Size = new Size(218, 23);
             textBoxDiasMulta.TabIndex = 6;
@@ -100,7 +101,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(15, 109);
+            label3.Location = new Point(29, 267);
             label3.Name = "label3";
             label3.Size = new Size(218, 50);
             label3.TabIndex = 5;
@@ -115,9 +116,9 @@
             buttonModificar.ForeColor = SystemColors.ButtonFace;
             buttonModificar.Image = (Image)resources.GetObject("buttonModificar.Image");
             buttonModificar.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonModificar.Location = new Point(313, 440);
+            buttonModificar.Location = new Point(698, 86);
             buttonModificar.Name = "buttonModificar";
-            buttonModificar.Size = new Size(170, 50);
+            buttonModificar.Size = new Size(182, 60);
             buttonModificar.TabIndex = 4;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
@@ -143,7 +144,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 201);
+            label2.Location = new Point(29, 379);
             label2.Name = "label2";
             label2.Size = new Size(160, 50);
             label2.TabIndex = 1;
@@ -152,7 +153,7 @@
             // textBoxMaximoPrestamo
             // 
             textBoxMaximoPrestamo.BorderStyle = BorderStyle.FixedSingle;
-            textBoxMaximoPrestamo.Location = new Point(12, 254);
+            textBoxMaximoPrestamo.Location = new Point(29, 441);
             textBoxMaximoPrestamo.Name = "textBoxMaximoPrestamo";
             textBoxMaximoPrestamo.Size = new Size(218, 23);
             textBoxMaximoPrestamo.TabIndex = 2;
@@ -163,7 +164,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 43);
+            label1.Location = new Point(32, 179);
             label1.Name = "label1";
             label1.Size = new Size(226, 25);
             label1.TabIndex = 1;
@@ -172,7 +173,7 @@
             // textBoxDiasPrestamo
             // 
             textBoxDiasPrestamo.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDiasPrestamo.Location = new Point(15, 71);
+            textBoxDiasPrestamo.Location = new Point(32, 228);
             textBoxDiasPrestamo.Name = "textBoxDiasPrestamo";
             textBoxDiasPrestamo.Size = new Size(215, 23);
             textBoxDiasPrestamo.TabIndex = 0;
@@ -183,11 +184,11 @@
             dgvReglas.AllowUserToAddRows = false;
             dgvReglas.AllowUserToDeleteRows = false;
             dgvReglas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvReglas.Location = new Point(254, 63);
+            dgvReglas.Location = new Point(21, 86);
             dgvReglas.Name = "dgvReglas";
             dgvReglas.ReadOnly = true;
             dgvReglas.RowTemplate.Height = 25;
-            dgvReglas.Size = new Size(664, 371);
+            dgvReglas.Size = new Size(649, 60);
             dgvReglas.TabIndex = 1;
             dgvReglas.CellContentClick += dgvReglas_CellContentClick;
             // 
@@ -200,10 +201,22 @@
             panel2.Size = new Size(930, 40);
             panel2.TabIndex = 2;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.ButtonFace;
+            label6.Location = new Point(21, 58);
+            label6.Name = "label6";
+            label6.Size = new Size(134, 25);
+            label6.TabIndex = 11;
+            label6.Text = "Reglas Actuales";
+            // 
             // FormReglas
             // 
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(label6);
             Controls.Add(buttonSalir);
             Controls.Add(buttonModificar);
             Controls.Add(textBoxPorcentajerecargo);
@@ -242,5 +255,6 @@
         private TextBox textBoxPorcentajerecargo;
         private Label label5;
         private Panel panel2;
+        private Label label6;
     }
 }
