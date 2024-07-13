@@ -39,6 +39,7 @@
             buttonCobroCuotas = new Button();
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
+            buttonReglasBiblio = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             button1.ForeColor = SystemColors.ButtonFace;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(12, 263);
+            button1.Location = new Point(12, 303);
             button1.Name = "button1";
             button1.Size = new Size(170, 59);
             button1.TabIndex = 2;
@@ -116,7 +117,7 @@
             button2.ForeColor = SystemColors.ButtonFace;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(12, 363);
+            button2.Location = new Point(228, 207);
             button2.Name = "button2";
             button2.Size = new Size(170, 50);
             button2.TabIndex = 3;
@@ -191,12 +192,29 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // buttonReglasBiblio
+            // 
+            buttonReglasBiblio.FlatAppearance.BorderSize = 0;
+            buttonReglasBiblio.FlatStyle = FlatStyle.Popup;
+            buttonReglasBiblio.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonReglasBiblio.ForeColor = SystemColors.ButtonFace;
+            buttonReglasBiblio.Image = (Image)resources.GetObject("buttonReglasBiblio.Image");
+            buttonReglasBiblio.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonReglasBiblio.Location = new Point(228, 276);
+            buttonReglasBiblio.Name = "buttonReglasBiblio";
+            buttonReglasBiblio.Size = new Size(188, 86);
+            buttonReglasBiblio.TabIndex = 5;
+            buttonReglasBiblio.Text = "Reglas \r\nde la \r\nBilioteca";
+            buttonReglasBiblio.UseVisualStyleBackColor = true;
+            buttonReglasBiblio.Click += buttonReglasBiblio_Click;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(buttonReglasBiblio);
             Controls.Add(pictureBox1);
             Controls.Add(buttonLibros);
             Controls.Add(buttonPrestamos);
@@ -226,5 +244,6 @@
         private Button buttonCobroCuotas;
         private Panel panel3;
         private PictureBox pictureBox1;
+        private Button buttonReglasBiblio;
     }
 }

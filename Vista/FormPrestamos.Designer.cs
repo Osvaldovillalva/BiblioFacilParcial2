@@ -41,6 +41,7 @@
             listBoxCarrito = new ListBox();
             label3 = new Label();
             panel1 = new Panel();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvSocios).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvLibros).BeginInit();
             SuspendLayout();
@@ -102,9 +103,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(11, 53);
             label1.Name = "label1";
-            label1.Size = new Size(108, 25);
+            label1.Size = new Size(64, 25);
             label1.TabIndex = 3;
-            label1.Text = "Datos Socio";
+            label1.Text = "Socios";
             // 
             // textBoxDatosSocio
             // 
@@ -185,12 +186,24 @@
             panel1.Size = new Size(930, 40);
             panel1.TabIndex = 15;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ButtonFace;
+            label4.Location = new Point(14, 210);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 25);
+            label4.TabIndex = 16;
+            label4.Text = "Libros";
+            // 
             // FormPrestamos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(label4);
             Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(listBoxCarrito);
@@ -226,5 +239,6 @@
         private ListBox listBoxCarrito;
         private Label label3;
         private Panel panel1;
+        private Label label4;
     }
 }

@@ -80,13 +80,7 @@ namespace Vista
             formPrestamos.Show();
         }
 
-        private void buttonReglas_Click(object sender, EventArgs e)
-        {
-            FormReglas formReglas = new FormReglas();
-
-            // Mostrar el formulario
-            formReglas.ShowDialog();
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -125,6 +119,14 @@ namespace Vista
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buttonReglasBiblio_Click(object sender, EventArgs e)
+        {
+            FormReglas formReglas = new FormReglas();
+
+            // Mostrar el formulario
+            formReglas.ShowDialog();
         }
     }
 }
