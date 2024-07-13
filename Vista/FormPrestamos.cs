@@ -67,21 +67,38 @@ namespace Vista
 
         private void CargarDatosDataGridView()
         {
-            // Obtén todos los préstamos de la base de datos utilizando la controladora
+            try
+            {
+                // Cargar los socios desde la controladora
+                var socios = controladoraSocios.ObtenerTodosLosSocios();
 
+                // Asignar los socios como la fuente de datos del DataGridView
+                dgvSocios.DataSource = socios;
 
-            // Carga los socios desde la controladora
-            var socios = controladoraSocios.ObtenerTodosLosSocios();
+                // Ocultar la columna SocioId si existe en el DataGridView dgvSocios
+                if (dgvSocios.Columns.Contains("SocioId"))
+                {
+                    dgvSocios.Columns["SocioId"].Visible = false;
+                }
 
-            // Asigna los socios como la fuente de datos del DataGridView
-            dgvSocios.DataSource = socios;
+                // Cargar los libros desde la controladora
+                var libros = controladoraLibros.ObtenerTodosLosLibros();
 
-            var libros = controladoraLibros.ObtenerTodosLosLibros();
+                // Asignar los libros como la fuente de datos del DataGridView
+                dgvLibros.DataSource = libros;
 
-            // Asigna los libros como la fuente de datos del DataGridView
-            dgvLibros.DataSource = libros;
-
+                // Ocultar la columna LibroId si existe en el DataGridView dgvLibros
+                if (dgvLibros.Columns.Contains("LibroId"))
+                {
+                    dgvLibros.Columns["LibroId"].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void FormPrestamos_Load(object sender, EventArgs e)
         {
@@ -357,6 +374,11 @@ namespace Vista
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

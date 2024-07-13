@@ -56,12 +56,26 @@ namespace Vista
 
         private void CargarDatosDataGridView()
         {
-            // Carga los socios desde la controladora
-            var socios = controladoraSocios.ObtenerTodosLosSocios();
+            try
+            {
+                // Cargar los socios desde la controladora
+                var socios = controladoraSocios.ObtenerTodosLosSocios();
 
-            // Asigna los socios como la fuente de datos del DataGridView
-            dgvSocios.DataSource = socios;
+                // Asignar los socios como la fuente de datos del DataGridView
+                dgvSocios.DataSource = socios;
+
+                // Ocultar la columna SocioId si existe en el DataGridView dgvSocios
+                if (dgvSocios.Columns.Contains("SocioId"))
+                {
+                    dgvSocios.Columns["SocioId"].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
@@ -293,6 +307,11 @@ namespace Vista
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

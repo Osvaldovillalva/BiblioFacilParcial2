@@ -57,7 +57,7 @@
             buttonAgregar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonAgregar.Location = new Point(12, 285);
             buttonAgregar.Name = "buttonAgregar";
-            buttonAgregar.Size = new Size(195, 50);
+            buttonAgregar.Size = new Size(184, 50);
             buttonAgregar.TabIndex = 4;
             buttonAgregar.Text = "Agregar";
             buttonAgregar.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             BtnModificar.ImageAlign = ContentAlignment.MiddleLeft;
             BtnModificar.Location = new Point(15, 365);
             BtnModificar.Name = "BtnModificar";
-            BtnModificar.Size = new Size(192, 50);
+            BtnModificar.Size = new Size(181, 50);
             BtnModificar.TabIndex = 3;
             BtnModificar.Text = "Modificar";
             BtnModificar.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             buttonBorrar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonBorrar.Location = new Point(15, 438);
             buttonBorrar.Name = "buttonBorrar";
-            buttonBorrar.Size = new Size(192, 50);
+            buttonBorrar.Size = new Size(181, 50);
             buttonBorrar.TabIndex = 2;
             buttonBorrar.Text = "Borrar";
             buttonBorrar.UseVisualStyleBackColor = true;
@@ -101,11 +101,11 @@
             dgvSocios.AllowUserToDeleteRows = false;
             dgvSocios.BackgroundColor = Color.Black;
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(224, 76);
+            dgvSocios.Location = new Point(213, 78);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.ReadOnly = true;
             dgvSocios.RowTemplate.Height = 25;
-            dgvSocios.Size = new Size(694, 357);
+            dgvSocios.Size = new Size(705, 357);
             dgvSocios.TabIndex = 2;
             // 
             // textBoxBuscar
@@ -136,6 +136,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(930, 40);
             panel2.TabIndex = 5;
+            panel2.Paint += panel2_Paint;
             // 
             // buttonSalir
             // 
@@ -163,7 +164,7 @@
             buttonLimpiar.ImageAlign = ContentAlignment.MiddleLeft;
             buttonLimpiar.Location = new Point(15, 217);
             buttonLimpiar.Name = "buttonLimpiar";
-            buttonLimpiar.Size = new Size(192, 50);
+            buttonLimpiar.Size = new Size(181, 50);
             buttonLimpiar.TabIndex = 5;
             buttonLimpiar.Text = "Limpiar Todo";
             buttonLimpiar.UseVisualStyleBackColor = true;
@@ -174,7 +175,7 @@
             textBoxNombre.BorderStyle = BorderStyle.FixedSingle;
             textBoxNombre.Location = new Point(12, 71);
             textBoxNombre.Name = "textBoxNombre";
-            textBoxNombre.Size = new Size(195, 23);
+            textBoxNombre.Size = new Size(184, 23);
             textBoxNombre.TabIndex = 6;
             textBoxNombre.TextChanged += textBoxNombre_TextChanged;
             // 
@@ -183,7 +184,7 @@
             textBoxApellido.BorderStyle = BorderStyle.FixedSingle;
             textBoxApellido.Location = new Point(15, 125);
             textBoxApellido.Name = "textBoxApellido";
-            textBoxApellido.Size = new Size(192, 23);
+            textBoxApellido.Size = new Size(181, 23);
             textBoxApellido.TabIndex = 7;
             textBoxApellido.TextChanged += textBoxApellido_TextChanged;
             // 
@@ -192,7 +193,7 @@
             textBoxDni.BorderStyle = BorderStyle.FixedSingle;
             textBoxDni.Location = new Point(15, 188);
             textBoxDni.Name = "textBoxDni";
-            textBoxDni.Size = new Size(192, 23);
+            textBoxDni.Size = new Size(181, 23);
             textBoxDni.TabIndex = 8;
             textBoxDni.TextChanged += textBoxDni_TextChanged;
             // 

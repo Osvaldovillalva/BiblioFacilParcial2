@@ -56,12 +56,26 @@ namespace Vista
 
         private void CargarDatosDataGridView()
         {
-            // Carga los libros desde la controladora
-            var libros = controladoraLibros.ObtenerTodosLosLibros();
+            try
+            {
+                // Cargar los libros desde la controladora
+                var libros = controladoraLibros.ObtenerTodosLosLibros();
 
-            // Asigna los libros como la fuente de datos del DataGridView
-            dgvLibros.DataSource = libros;
+                // Asignar los libros como la fuente de datos del DataGridView
+                dgvLibros.DataSource = libros;
+
+                // Ocultar la columna LibroId si existe en el DataGridView
+                if (dgvLibros.Columns.Contains("LibroId"))
+                {
+                    dgvLibros.Columns["LibroId"].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void buttonSalir_Click_1(object sender, EventArgs e)
         {
