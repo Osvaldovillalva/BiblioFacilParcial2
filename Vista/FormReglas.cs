@@ -70,7 +70,11 @@ namespace Vista
 
             // Asigna las reglas como la fuente de datos del DataGridView
             dgvReglas.DataSource = reglas;
+
+            // Oculta la columna "ReglaId"
+            dgvReglas.Columns["ReglaId"].Visible = false;
         }
+
 
         private void textBoxDiasPrestamo_TextChanged(object sender, EventArgs e)
         {
