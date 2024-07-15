@@ -109,29 +109,40 @@ namespace Vista
         }
 
 
-
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
-            string textoBusqueda = textBoxBuscar.Text.Trim();
+            string textoBusqueda = textBoxBuscar.Text.Trim().ToLower(); // Convertir a minúsculas para comparación case-insensitive
 
-            if (!string.IsNullOrWhiteSpace(textoBusqueda))
+            // Recorrer todas las filas del DataGridView
+            foreach (DataGridViewRow row in dgvPrestamos.Rows)
             {
-                // Realizar la búsqueda en la base de datos
-                List<Prestamo> resultadosBusqueda = controladoraPrestamos.BuscarPrestamos(textoBusqueda);
+                bool mostrarFila = false; // Variable para determinar si la fila debe mostrarse
 
-                // Asignar el DataSource del DataGridView a los resultados de la búsqueda
-                dgvPrestamos.DataSource = resultadosBusqueda;
-            }
-            else
-            {
-                // Si el texto de búsqueda está vacío, cargar todos los préstamos en el DataGridView
-                CargarDatosDataGridView();
-            }
+                // Verificar cada celda en las columnas específicas
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.OwningColumn.Name == "SocioDni" || cell.OwningColumn.Name == "LibroTitulo")
+                    {
+                        string cellValue = cell.Value?.ToString().ToLower() ?? ""; // Obtener el valor de la celda y convertir a minúsculas
+                        if (cellValue.Contains(textoBusqueda)) // Comprobar si el texto de búsqueda está en la celda
+                        {
+                            mostrarFila = true;
+                            break; // Salir del bucle si se encuentra una coincidencia
+                        }
+                    }
+                }
 
-            // Ocultar las columnas de IdSocio y IdLibro
-            dgvPrestamos.Columns["LibroId"].Visible = false;
-            dgvPrestamos.Columns["SocioId"].Visible = false;
+                // Establecer la visibilidad de la fila
+                row.Visible = mostrarFila;
+            }
         }
+
+
+
+
+
+
+
 
         private void buttonGenerarDevolucion_Click(object sender, EventArgs e)
         {
