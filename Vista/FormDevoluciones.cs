@@ -73,23 +73,41 @@ namespace Vista
         {
             try
             {
-                // Obtener los datos de la tabla Prestamos
-                List<Prestamo> prestamos = controladoraPrestamos.ObtenerTodosLosPrestamos();
+                using (var contexto = new SistemaBibliotecario())
+                {
+                    var prestamosConDetalles = from p in contexto.Prestamos
+                                               join s in contexto.Socios on p.SocioId equals s.SocioId
+                                               join l in contexto.Libros on p.LibroId equals l.LibroId
+                                               select new
+                                               {
+                                                   p.PrestamoId,
+                                                   p.FechaPrestamo,
+                                                   p.FechaDevolucion,
+                                                   SocioDni = s.Dni,
+                                                   LibroTitulo = l.Titulo,
+                                                   p.CarritoId,
+                                                   p.EnPrestamo
+                                               };
 
-                // Asignar el DataSource del DataGridView al listado de préstamos
-                dgvPrestamos.DataSource = prestamos;
+                    // Asignar el DataSource del DataGridView al listado de préstamos con detalles
+                    dgvPrestamos.DataSource = prestamosConDetalles.ToList();
 
-                // Ocultar las columnas que deseas ocultar
-                dgvPrestamos.Columns["LibroId"].Visible = false;
-                dgvPrestamos.Columns["SocioId"].Visible = false;
-                dgvPrestamos.Columns["PrestamoId"].Visible = false;
-                dgvPrestamos.Columns["CarritoId"].Visible = false;
+                    // Configurar las columnas visibles e invisibles según sea necesario
+                    dgvPrestamos.Columns["PrestamoId"].Visible = false;
+                    dgvPrestamos.Columns["CarritoId"].Visible = false;
+                    dgvPrestamos.Columns["EnPrestamo"].Visible = false;
+
+                    // Renombrar columnas para claridad si es necesario
+                    dgvPrestamos.Columns["SocioDni"].HeaderText = "DNI del Socio";
+                    dgvPrestamos.Columns["LibroTitulo"].HeaderText = "Título del Libro";
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
