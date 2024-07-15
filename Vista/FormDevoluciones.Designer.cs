@@ -69,9 +69,9 @@
             // textBoxBuscar
             // 
             textBoxBuscar.BorderStyle = BorderStyle.FixedSingle;
-            textBoxBuscar.Location = new Point(90, 62);
+            textBoxBuscar.Location = new Point(284, 58);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.Size = new Size(828, 23);
+            textBoxBuscar.Size = new Size(632, 23);
             textBoxBuscar.TabIndex = 2;
             textBoxBuscar.TextChanged += textBoxBuscar_TextChanged;
             // 
@@ -82,9 +82,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(21, 58);
             label1.Name = "label1";
-            label1.Size = new Size(63, 25);
+            label1.Size = new Size(253, 25);
             label1.TabIndex = 3;
-            label1.Text = "Buscar";
+            label1.Text = "Ingrese D.N.I o Titulo del Libro";
             // 
             // buttonGenerarDevolucion
             // 
