@@ -19,7 +19,7 @@ namespace Vista
         public FormRegistros()
         {
             InitializeComponent();
-            controladoraDevoluciones =new ControladoraDevoluciones();
+            controladoraDevoluciones = new ControladoraDevoluciones();
             controladoraMultas = new ControladoraMultas();
             this.StartPosition = FormStartPosition.Manual;
 
@@ -65,17 +65,36 @@ namespace Vista
             // Asignar el DataSource del DataGridView al listado de devoluciones
             dgvDevoluciones.DataSource = devoluciones;
 
-            // Ocultar las columnas de IdPrestamo si no es necesario mostrarlo
+            // Ocultar las columnas DevolucionId y PrestamoId
+            if (dgvDevoluciones.Columns["DevolucionId"] != null)
+            {
+                dgvDevoluciones.Columns["DevolucionId"].Visible = false;
+            }
+            if (dgvDevoluciones.Columns["PrestamoId"] != null)
+            {
+                dgvDevoluciones.Columns["PrestamoId"].Visible = false;
+            }
 
-
+            // Obtener los datos de la tabla Multas
             List<Multa> multas = controladoraMultas.ObtenerTodasLasMultas();
             dgvMultas.DataSource = multas;
 
+            // Ocultar las columnas SocioId y MultaId
+            if (dgvMultas.Columns["SocioId"] != null)
+            {
+                dgvMultas.Columns["SocioId"].Visible = false;
+            }
+            if (dgvMultas.Columns["MultaId"] != null)
+            {
+                dgvMultas.Columns["MultaId"].Visible = false;
+            }
         }
 
 
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
-
+        }
     }
 }
