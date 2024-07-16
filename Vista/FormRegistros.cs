@@ -9,13 +9,13 @@ namespace Vista
         private ControladoraMultas controladoraMultas;
         private ControladoraPrestamos controladoraPrestamos;
         private ControladoraLibros controladoraLibros;
-        private ControladoraSocios controladoraSocios;  
+        private ControladoraSocios controladoraSocios;
         public FormRegistros()
         {
             InitializeComponent();
             controladoraDevoluciones = new ControladoraDevoluciones();
             controladoraMultas = new ControladoraMultas();
-            controladoraPrestamos= new ControladoraPrestamos(); 
+            controladoraPrestamos = new ControladoraPrestamos();
             controladoraSocios = new ControladoraSocios();
             controladoraLibros = new ControladoraLibros();
             this.StartPosition = FormStartPosition.Manual;
@@ -105,20 +105,46 @@ namespace Vista
             // Obtener los datos de la tabla Multas
             List<Multa> multas = controladoraMultas.ObtenerTodasLasMultas();
 
-            // Asignar el DataSource del DataGridView de Multas
-            dgvMultas.DataSource = multas;
+            // Crear una lista para almacenar los datos completos de multas incluyendo info de socio
+            List<object> multasCompletas = new List<object>();
 
-            // Ocultar las columnas SocioId y MultaId
+            // Iterar sobre cada multa para obtener info de socio
+            foreach (var multa in multas)
+            {
+                // Obtener el socio asociado a la multa
+                Socio socio = controladoraSocios.ObtenerSocioPorId(multa.SocioId);
+
+                // Verificar si el socio no es nulo (debería existir si hay multa)
+                if (socio != null)
+                {
+                    // Crear un objeto anónimo con los datos de la multa y el socio
+                    var multaCompleta = new
+                    {
+                        MultaId = multa.MultaId,
+                        SocioId = multa.SocioId,
+                        ApellidoSocio = socio.Apellido,
+                        DniSocio = socio.Dni,
+                        FechaInicio = multa.FechaInicio,
+                        FechaFinalizacion = multa.FechaFinalizacion,
+                        Pagada = multa.Pagada
+                    };
+
+                    // Agregar el objeto completo a la lista
+                    multasCompletas.Add(multaCompleta);
+                }
+            }
+
+            // Asignar el DataSource del DataGridView de Multas al listado de multas completas
+            dgvMultas.DataSource = multasCompletas;
+
+            // Ocultar las columnas que no queremos mostrar
             dgvMultas.Columns["SocioId"].Visible = false;
             dgvMultas.Columns["MultaId"].Visible = false;
         }
-
-
-
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
+
+
+
+  
+
