@@ -185,14 +185,27 @@ namespace Vista
                 // Calcular el total a pagar
                 decimal totalAPagar = totalCuotas + totalRecargo;
 
-                // Mostrar mensaje final con el total a pagar
-                MessageBox.Show($"¡Pago generado correctamente! Total a pagar: {totalAPagar:C}", "Generación de Pago", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Confirmar si desea realizar el pago
+                DialogResult confirmacion = MessageBox.Show($"¿Desea realizar el pago? Total a pagar: {totalAPagar:C}", "Confirmación de Pago", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (confirmacion == DialogResult.Yes)
+                {
+                    // Mostrar mensaje final con el total a pagar
+                    MessageBox.Show($"¡Pago generado correctamente! Total a pagar: {totalAPagar:C}", "Generación de Pago", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Aquí podrías realizar acciones adicionales como registrar el pago en tu sistema
+                }
+                else
+                {
+                    // El usuario decidió no realizar el pago
+                    MessageBox.Show("Operación cancelada por el usuario.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al generar el pago: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
         private void MostrarDetallesCarritoCuotasPendientes(CarritoCuotasPendientes carrito)
@@ -248,5 +261,9 @@ namespace Vista
             listBoxCarritoCuotas.Items.Clear();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
