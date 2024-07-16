@@ -1,14 +1,5 @@
 ﻿using Controladora;
 using Entidades;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Vista
 {
@@ -16,11 +7,17 @@ namespace Vista
     {
         private ControladoraDevoluciones controladoraDevoluciones;
         private ControladoraMultas controladoraMultas;
+        private ControladoraPrestamos controladoraPrestamos;
+        private ControladoraLibros controladoraLibros;
+        private ControladoraSocios controladoraSocios;  
         public FormRegistros()
         {
             InitializeComponent();
             controladoraDevoluciones = new ControladoraDevoluciones();
             controladoraMultas = new ControladoraMultas();
+            controladoraPrestamos= new ControladoraPrestamos(); 
+            controladoraSocios = new ControladoraSocios();
+            controladoraLibros = new ControladoraLibros();
             this.StartPosition = FormStartPosition.Manual;
 
             // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
@@ -62,33 +59,60 @@ namespace Vista
             // Obtener los datos de la tabla Devoluciones
             List<Devolucion> devoluciones = controladoraDevoluciones.ObtenerTodasLasDevoluciones();
 
-            // Asignar el DataSource del DataGridView al listado de devoluciones
-            dgvDevoluciones.DataSource = devoluciones;
+            // Crear una lista para almacenar los datos completos de devoluciones incluyendo info de prestamo
+            List<object> devolucionesCompletas = new List<object>();
 
-            // Ocultar las columnas DevolucionId y PrestamoId
-            if (dgvDevoluciones.Columns["DevolucionId"] != null)
+            // Iterar sobre cada devolución para obtener info de prestamo
+            foreach (var devolucion in devoluciones)
             {
-                dgvDevoluciones.Columns["DevolucionId"].Visible = false;
+                // Obtener el prestamo asociado a la devolución
+                Prestamo prestamo = controladoraPrestamos.ObtenerPrestamoPorId(devolucion.PrestamoId);
+
+                // Verificar si el prestamo no es nulo (debería existir si hay devolución)
+                if (prestamo != null)
+                {
+                    // Obtener el socio y el libro asociados al prestamo
+                    Socio socio = controladoraSocios.ObtenerSocioPorId(prestamo.SocioId);
+                    Libro libro = controladoraLibros.ObtenerLibroPorId(prestamo.LibroId);
+
+                    // Verificar que socio y libro no sean nulos (deberían existir si hay prestamo)
+                    if (socio != null && libro != null)
+                    {
+                        // Crear un objeto anónimo con los datos de la devolución, socio y libro
+                        var devolucionCompleta = new
+                        {
+                            DevolucionId = devolucion.DevolucionId,
+                            FechaDevolucion = devolucion.FechaDevolucion,
+                            PrestamoId = devolucion.PrestamoId,
+                            ApellidoSocio = socio.Apellido,
+                            DniSocio = socio.Dni,
+                            TituloLibro = libro.Titulo
+                        };
+
+                        // Agregar el objeto completo a la lista
+                        devolucionesCompletas.Add(devolucionCompleta);
+                    }
+                }
             }
-            if (dgvDevoluciones.Columns["PrestamoId"] != null)
-            {
-                dgvDevoluciones.Columns["PrestamoId"].Visible = false;
-            }
+
+            // Asignar el DataSource del DataGridView al listado de devoluciones completas
+            dgvDevoluciones.DataSource = devolucionesCompletas;
+
+            // Ocultar las columnas que no queremos mostrar
+            dgvDevoluciones.Columns["DevolucionId"].Visible = false;
+            dgvDevoluciones.Columns["PrestamoId"].Visible = false;
 
             // Obtener los datos de la tabla Multas
             List<Multa> multas = controladoraMultas.ObtenerTodasLasMultas();
+
+            // Asignar el DataSource del DataGridView de Multas
             dgvMultas.DataSource = multas;
 
             // Ocultar las columnas SocioId y MultaId
-            if (dgvMultas.Columns["SocioId"] != null)
-            {
-                dgvMultas.Columns["SocioId"].Visible = false;
-            }
-            if (dgvMultas.Columns["MultaId"] != null)
-            {
-                dgvMultas.Columns["MultaId"].Visible = false;
-            }
+            dgvMultas.Columns["SocioId"].Visible = false;
+            dgvMultas.Columns["MultaId"].Visible = false;
         }
+
 
 
 
