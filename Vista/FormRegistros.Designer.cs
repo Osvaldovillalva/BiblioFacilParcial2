@@ -36,8 +36,10 @@
             dgvMultas = new DataGridView();
             label3 = new Label();
             panel1 = new Panel();
+            dgvCuotasPagadas = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvDevoluciones).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvMultas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCuotasPagadas).BeginInit();
             SuspendLayout();
             // 
             // buttonSalir
@@ -100,7 +102,7 @@
             dgvMultas.Name = "dgvMultas";
             dgvMultas.ReadOnly = true;
             dgvMultas.RowTemplate.Height = 25;
-            dgvMultas.Size = new Size(896, 187);
+            dgvMultas.Size = new Size(896, 101);
             dgvMultas.TabIndex = 4;
             // 
             // label3
@@ -122,7 +124,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(930, 40);
             panel1.TabIndex = 6;
-            
+            panel1.Paint += panel1_Paint;
+            // 
+            // dgvCuotasPagadas
+            // 
+            dgvCuotasPagadas.AllowUserToAddRows = false;
+            dgvCuotasPagadas.AllowUserToDeleteRows = false;
+            dgvCuotasPagadas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCuotasPagadas.Location = new Point(12, 338);
+            dgvCuotasPagadas.Name = "dgvCuotasPagadas";
+            dgvCuotasPagadas.ReadOnly = true;
+            dgvCuotasPagadas.RowTemplate.Height = 25;
+            dgvCuotasPagadas.Size = new Size(861, 89);
+            dgvCuotasPagadas.TabIndex = 7;
             // 
             // FormRegistros
             // 
@@ -130,6 +144,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(dgvCuotasPagadas);
             Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(dgvMultas);
@@ -143,6 +158,7 @@
             Load += FormRegistros_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDevoluciones).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvMultas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCuotasPagadas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,5 +172,6 @@
         private DataGridView dgvMultas;
         private Label label3;
         private Panel panel1;
+        private DataGridView dgvCuotasPagadas;
     }
 }

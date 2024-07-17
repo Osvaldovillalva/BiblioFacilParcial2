@@ -10,6 +10,7 @@ namespace Vista
         private ControladoraPrestamos controladoraPrestamos;
         private ControladoraLibros controladoraLibros;
         private ControladoraSocios controladoraSocios;
+        private ControladoraCuotas controladoraCuotas;
         public FormRegistros()
         {
             InitializeComponent();
@@ -18,6 +19,7 @@ namespace Vista
             controladoraPrestamos = new ControladoraPrestamos();
             controladoraSocios = new ControladoraSocios();
             controladoraLibros = new ControladoraLibros();
+            controladoraCuotas = new ControladoraCuotas();
             this.StartPosition = FormStartPosition.Manual;
 
             // Establecer la ubicación del formulario en la pantalla (por ejemplo, en las coordenadas 100, 100)
@@ -140,6 +142,20 @@ namespace Vista
             // Ocultar las columnas que no queremos mostrar
             dgvMultas.Columns["SocioId"].Visible = false;
             dgvMultas.Columns["MultaId"].Visible = false;
+
+            dgvCuotasPagadas.DataSource = multasCompletas;
+
+
+
+            var pago = controladoraCuotas.ObtenerTodosLosPagos();
+
+            // Asignar los libros como la fuente de datos del DataGridView
+            dgvCuotasPagadas.DataSource = pago;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

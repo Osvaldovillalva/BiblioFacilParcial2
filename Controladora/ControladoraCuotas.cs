@@ -36,7 +36,20 @@ namespace Controladora
                 return new List<CuotaMensual>();
             }
         }
-
+        public List<DetallePago> ObtenerTodosLosPagos()
+        {
+            try
+            {
+                // Utiliza el DbContext para obtener todas las cuotas mensuales
+                return contexto.DetallesPagos.ToList();
+            }
+            catch (Exception ex)
+            {
+                // Maneja cualquier excepción que pueda ocurrir durante la obtención de las cuotas
+                Console.WriteLine("Error al obtener las cuotas: " + ex.Message);
+                return new List<DetallePago>();
+            }
+        }
         public bool AgregarCuota(int año, int numeroMes, string nombreMes, decimal valorCuota)
         {
             try
