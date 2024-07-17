@@ -251,6 +251,42 @@ namespace Controladora
             decimal recargoRedondeado = Math.Ceiling(recargo / 10) * 10; // Redondear hacia arriba a múltiplos de 10
             return recargoRedondeado;
         }
+        public bool RegistrarPago(int socioId, int cuotaMensualId, DateTime fechaPago, decimal montoCobrado)
+        {
+            try
+            {
+                // Verificar si el socio y la cuota existen
+                var socio = contexto.Socios.FirstOrDefault(s => s.SocioId == socioId);
+                var cuota = contexto.CuotasMensuales.FirstOrDefault(c => c.CuotaMensualId == cuotaMensualId);
+
+                if (socio == null || cuota == null)
+                {
+                    Console.WriteLine("No se pudo encontrar el socio o la cuota especificada.");
+                    return false;
+                }
+
+                // Crear un nuevo detalle de pago
+                var nuevoDetallePago = new DetallePago
+                {
+                    SocioId = socioId,
+                    CuotaMensualId = cuotaMensualId,
+                    FechaPago = fechaPago,
+                    MontoCobrado = montoCobrado
+                };
+
+                // Agregar el detalle de pago al contexto y guardar los cambios
+                contexto.DetallesPagos.Add(nuevoDetallePago);
+                contexto.SaveChanges();
+
+                Console.WriteLine("Pago registrado correctamente.");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al registrar el pago: " + ex.Message);
+                return false;
+            }
+        }
 
 
     }

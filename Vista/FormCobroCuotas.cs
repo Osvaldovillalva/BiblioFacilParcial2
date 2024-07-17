@@ -182,7 +182,7 @@ namespace Vista
                     MessageBox.Show(sb.ToString(), "Cuotas Vencidas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
-                // Calcular el total a pagar
+                // Calcular el total a pagar incluyendo el recargo
                 decimal totalAPagar = totalCuotas + totalRecargo;
 
                 // Confirmar si desea realizar el pago
@@ -190,9 +190,16 @@ namespace Vista
 
                 if (confirmacion == DialogResult.Yes)
                 {
-                    // Mostrar mensaje final con el total a pagar
+                    // Registrar el pago en la base de datos
+                    foreach (CuotaMensual cuota in carritoCuotasPendientes.CuotasSeleccionadas)
+                    {
+                        int socioIdSeleccionado = ObtenerSocioSeleccionado(); // Debes implementar esta lógica según tu aplicación
+                        decimal montoCobrado = (cuota.Valor ?? 0m) + controladoraCuotas.CalcularRecargo(cuota); // Sumar el recargo al valor original
+                        controladoraCuotas.RegistrarPago(socioIdSeleccionado, cuota.CuotaMensualId, DateTime.Today, montoCobrado);
+                    }
+
+                    // Mostrar mensaje de éxito
                     MessageBox.Show($"¡Pago generado correctamente! Total a pagar: {totalAPagar:C}", "Generación de Pago", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Aquí podrías realizar acciones adicionales como registrar el pago en tu sistema
                 }
                 else
                 {
@@ -205,6 +212,24 @@ namespace Vista
                 MessageBox.Show($"Error al generar el pago: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
+        private int ObtenerSocioSeleccionado()
+        {
+            // Implementa la lógica para obtener el SocioId seleccionado en tu interfaz de usuario
+            // Por ejemplo, si tienes un DataGridView con socios y el usuario selecciona uno:
+            if (dgvSocios.SelectedRows.Count > 0)
+            {
+                // Obtener el SocioId desde la fila seleccionada
+                return (int)dgvSocios.SelectedRows[0].Cells["SocioId"].Value;
+            }
+
+            // Si no hay selección válida, puedes retornar 0 u otro valor según tu lógica de negocio
+            return 0;
+        }
+
+
 
 
 
