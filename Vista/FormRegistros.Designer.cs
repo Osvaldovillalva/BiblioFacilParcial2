@@ -37,6 +37,7 @@
             label3 = new Label();
             panel1 = new Panel();
             dgvCuotasPagadas = new DataGridView();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvDevoluciones).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvMultas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCuotasPagadas).BeginInit();
@@ -68,7 +69,7 @@
             dgvDevoluciones.Name = "dgvDevoluciones";
             dgvDevoluciones.ReadOnly = true;
             dgvDevoluciones.RowTemplate.Height = 25;
-            dgvDevoluciones.Size = new Size(896, 138);
+            dgvDevoluciones.Size = new Size(896, 94);
             dgvDevoluciones.TabIndex = 1;
             // 
             // label1
@@ -98,11 +99,11 @@
             dgvMultas.AllowUserToDeleteRows = false;
             dgvMultas.BackgroundColor = Color.Black;
             dgvMultas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMultas.Location = new Point(22, 240);
+            dgvMultas.Location = new Point(22, 226);
             dgvMultas.Name = "dgvMultas";
             dgvMultas.ReadOnly = true;
             dgvMultas.RowTemplate.Height = 25;
-            dgvMultas.Size = new Size(896, 101);
+            dgvMultas.Size = new Size(896, 87);
             dgvMultas.TabIndex = 4;
             // 
             // label3
@@ -110,11 +111,12 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(22, 212);
+            label3.Location = new Point(22, 198);
             label3.Name = "label3";
             label3.Size = new Size(65, 25);
             label3.TabIndex = 5;
             label3.Text = "Multas";
+            label3.Click += label3_Click;
             // 
             // panel1
             // 
@@ -130,13 +132,25 @@
             // 
             dgvCuotasPagadas.AllowUserToAddRows = false;
             dgvCuotasPagadas.AllowUserToDeleteRows = false;
+            dgvCuotasPagadas.BackgroundColor = Color.Black;
             dgvCuotasPagadas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCuotasPagadas.Location = new Point(12, 338);
+            dgvCuotasPagadas.Location = new Point(12, 347);
             dgvCuotasPagadas.Name = "dgvCuotasPagadas";
             dgvCuotasPagadas.ReadOnly = true;
             dgvCuotasPagadas.RowTemplate.Height = 25;
             dgvCuotasPagadas.Size = new Size(861, 89);
             dgvCuotasPagadas.TabIndex = 7;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ButtonFace;
+            label4.Location = new Point(22, 316);
+            label4.Name = "label4";
+            label4.Size = new Size(138, 25);
+            label4.TabIndex = 8;
+            label4.Text = "Cuotas Pagadas";
             // 
             // FormRegistros
             // 
@@ -144,6 +158,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(930, 500);
+            Controls.Add(label4);
             Controls.Add(dgvCuotasPagadas);
             Controls.Add(panel1);
             Controls.Add(label3);
@@ -173,5 +188,6 @@
         private Label label3;
         private Panel panel1;
         private DataGridView dgvCuotasPagadas;
+        private Label label4;
     }
 }
