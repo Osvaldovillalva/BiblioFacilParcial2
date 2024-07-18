@@ -151,6 +151,13 @@ namespace Vista
 
             // Asignar los libros como la fuente de datos del DataGridView
             dgvCuotasPagadas.DataSource = pago;
+
+            dgvCuotasPagadas.Columns["DetallePagoId"].Visible = false;
+            dgvCuotasPagadas.Columns["SocioId"].Visible = false;
+            dgvCuotasPagadas.Columns["CuotaMensualId"].Visible = false;
+            dgvCuotasPagadas.Columns["Socio"].Visible = false;
+            dgvCuotasPagadas.Columns["CuotaMensual"].Visible = false;
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
