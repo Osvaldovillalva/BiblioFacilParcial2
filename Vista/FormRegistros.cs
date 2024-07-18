@@ -147,16 +147,60 @@ namespace Vista
 
 
 
-            var pago = controladoraCuotas.ObtenerTodosLosPagos();
+            var detallesPagosConInfo = controladoraCuotas.ObtenerDetallesPagosConInformacion();
 
-            // Asignar los libros como la fuente de datos del DataGridView
-            dgvCuotasPagadas.DataSource = pago;
+            // Desvincular el DataGridView de la fuente de datos actual
+            dgvCuotasPagadas.DataSource = null;
 
-            dgvCuotasPagadas.Columns["DetallePagoId"].Visible = false;
-            dgvCuotasPagadas.Columns["SocioId"].Visible = false;
-            dgvCuotasPagadas.Columns["CuotaMensualId"].Visible = false;
-            dgvCuotasPagadas.Columns["Socio"].Visible = false;
-            dgvCuotasPagadas.Columns["CuotaMensual"].Visible = false;
+            // Crear nuevas columnas para Dni, Apellido, Mes y Año si no existen
+            if (!dgvCuotasPagadas.Columns.Contains("Apellido"))
+            {
+                dgvCuotasPagadas.Columns.Add("Apellido", "Apellido");
+            }
+            if (!dgvCuotasPagadas.Columns.Contains("Dni"))
+            {
+                dgvCuotasPagadas.Columns.Add("Dni", "Dni");
+            }
+            if (!dgvCuotasPagadas.Columns.Contains("Mes"))
+            {
+                dgvCuotasPagadas.Columns.Add("Mes", "Mes");
+            }
+            if (!dgvCuotasPagadas.Columns.Contains("Año"))
+            {
+                dgvCuotasPagadas.Columns.Add("Año", "Año");
+            }
+
+            // Limpiar las filas existentes en el DataGridView
+            dgvCuotasPagadas.Rows.Clear();
+
+            // Rellenar el DataGridView con los datos obtenidos
+            foreach (var detalle in detallesPagosConInfo)
+            {
+                dgvCuotasPagadas.Rows.Add(detalle.Apellido, detalle.Dni, detalle.Mes, detalle.Año);
+            }
+
+            // Ocultar las columnas innecesarias
+            if (dgvCuotasPagadas.Columns.Contains("DetallePagoId"))
+            {
+                dgvCuotasPagadas.Columns["DetallePagoId"].Visible = false;
+            }
+            if (dgvCuotasPagadas.Columns.Contains("SocioId"))
+            {
+                dgvCuotasPagadas.Columns["SocioId"].Visible = false;
+            }
+            if (dgvCuotasPagadas.Columns.Contains("CuotaMensualId"))
+            {
+                dgvCuotasPagadas.Columns["CuotaMensualId"].Visible = false;
+            }
+            if (dgvCuotasPagadas.Columns.Contains("Socio"))
+            {
+                dgvCuotasPagadas.Columns["Socio"].Visible = false;
+            }
+            if (dgvCuotasPagadas.Columns.Contains("CuotaMensual"))
+            {
+                dgvCuotasPagadas.Columns["CuotaMensual"].Visible = false;
+            }
+
 
         }
 

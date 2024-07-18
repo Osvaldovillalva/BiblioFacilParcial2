@@ -288,6 +288,34 @@ namespace Controladora
             }
         }
 
+        public List<(string Apellido, int Dni, string Mes, int Año)> ObtenerDetallesPagosConInformacion()
+        {
+            try
+            {
+                // Unir las tablas DetallesPagos, Socios y CuotasMensuales
+                var detallesPagosConInfo = from detallePago in contexto.DetallesPagos
+                                           join socio in contexto.Socios on detallePago.SocioId equals socio.SocioId
+                                           join cuota in contexto.CuotasMensuales on detallePago.CuotaMensualId equals cuota.CuotaMensualId
+                                           select new
+                                           {
+                                               socio.Apellido,
+                                               socio.Dni,
+                                               cuota.Mes,
+                                               cuota.Año
+                                           };
+
+                // Convertir a una lista de tuplas y retornar
+                return detallesPagosConInfo
+                    .ToList()
+                    .Select(x => (x.Apellido, x.Dni, x.Mes, x.Año))
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al obtener los detalles de pagos con información: " + ex.Message);
+                return new List<(string Apellido, int Dni, string Mes, int Año)>();
+            }
+        }
 
     }
 
